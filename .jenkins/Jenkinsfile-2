@@ -42,7 +42,7 @@ pipeline {
                 echo 'Deploying to the staging environment...'
 
                 // Send deployment information to Jira
-                jiraSendDeploymentInfo environmentId: 'stg-env-1', environmentName: 'staging', environmentType: 'staging', issueKeys: ['SCRUM-1'], state: 'successful'
+                jiraSendDeploymentInfo environmentId: 'stg-env-1', environmentName: 'staging', environmentType: 'staging', issueKeys: ['SCRUM-1'], state: 'successful', site: env.JIRA_SITE
             }
         }
     }

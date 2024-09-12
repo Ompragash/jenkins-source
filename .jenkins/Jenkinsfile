@@ -10,7 +10,7 @@ pipeline {
             post {
                 always {
                     // Send build info to Jira, associating it with the SCRUM-1 issue
-                    jiraSendBuildInfo site: 'fossops.atlassian.net', branch: 'SCRUM-1'
+                    jiraSendBuildInfo site: 'fossops.atlassian.net', branch: 'main'
                 }
             }
         }

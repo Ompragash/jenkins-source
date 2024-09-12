@@ -17,9 +17,6 @@ pipeline {
 
         // Deployment Stage: Staging
         stage('Deploy to Staging') {
-            when {
-                branch 'main'  // Trigger only on the main branch
-            }
             steps {
                 echo 'Deploying to Staging...'
             }
@@ -33,9 +30,6 @@ pipeline {
 
         // Deployment Stage: Production
         stage('Deploy to Production') {
-            when {
-                branch 'main'
-            }
             steps {
                 echo 'Deploying to Production...'
             }

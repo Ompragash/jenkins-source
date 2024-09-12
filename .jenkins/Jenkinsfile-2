@@ -39,10 +39,10 @@ pipeline {
 
         stage('Deploy') {
             steps {
-                echo 'Deploying to the development environment...'
+                echo 'Deploying to the staging environment...'
 
                 // Send deployment information to Jira
-                jiraSendDeploymentInfo jiraSendDeploymentInfo environmentId: 'stg-env-1', environmentName: 'staging', environmentType: 'staging', issueKeys: ['SCRUM-1'], state: 'successful'
+                jiraSendDeploymentInfo environmentId: 'stg-env-1', environmentName: 'staging', environmentType: 'staging', issueKeys: ['SCRUM-1'], state: 'successful'
             }
         }
     }

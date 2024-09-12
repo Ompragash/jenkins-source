@@ -1,0 +1,58 @@
+pipeline {
+    agent any
+
+    environment {
+        JIRA_SITE = 'fossops.atlassian.net'  // Replace with your Jira site name
+        ENVIRONMENT_ID = 'dev-environment'  // Environment ID for deployments
+        ENVIRONMENT_NAME = 'Development'    // Name of the environment
+        ENVIRONMENT_TYPE = 'development'    // Environment type
+    }
+
+    stages {
+        stage('Checkout') {
+            steps {
+                checkout scm
+            }
+        }
+
+        stage('Build') {
+            steps {
+                echo 'Building the application...'
+
+                // Send build information to Jira
+                jiraSendBuildInfo site: env.JIRA_SITE, branch: 'SCRUM-1'
+            }
+        }
+
+        stage('Test') {
+            steps {
+                echo 'Running tests...'
+            }
+        }
+
+        stage('Check Gating Status') {
+            steps {
+                // Check gating status for the environment in Jira Service Desk
+                checkGatingStatus environmentId: env.ENVIRONMENT_ID, site: env.JIRA_SITE
+            }
+        }
+
+        stage('Deploy') {
+            steps {
+                echo 'Deploying to the development environment...'
+
+                // Send deployment information to Jira
+                jiraSendDeploymentInfo jiraSendDeploymentInfo environmentId: 'stg-env-1', environmentName: 'staging', environmentType: 'staging', issueKeys: ['SCRUM-1'], state: 'successful'
+            }
+        }
+    }
+
+    post {
+        always {
+            // Send post-build information to Jira after build completion
+            step([$class: 'FreeStylePostBuildStep', site: env.JIRA_SITE, branch: 'main'])
+
+            echo 'Build and deployment information sent to Jira.'
+        }
+    }
+}

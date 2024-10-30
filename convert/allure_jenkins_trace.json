@@ -1,0 +1,469 @@
+{
+  "traceId": "2bc5a16e36c9eef4e02125508d26ac9c",
+  "spanId": "78c9409af64aa271",
+  "harnessVersion": "2.18.13-SNAPSHOT",
+  "children": [
+    {
+      "spanId": "c0a27521d3eb94a5",
+      "traceId": "2bc5a16e36c9eef4e02125508d26ac9c",
+      "parent": "op-allure",
+      "all-info": "span(name: Phase: Finalise, spanId: c0a27521d3eb94a5, parentSpanId: 78c9409af64aa271, traceId: 2bc5a16e36c9eef4e02125508d26ac9c, attr: )",
+      "name": "op-allure #3",
+      "attributesMap": {},
+      "type": "Run Phase Span",
+      "parentSpanId": "78c9409af64aa271",
+      "spanName": "Phase: Finalise"
+    },
+    {
+      "spanId": "7099388e66fbfa30",
+      "traceId": "2bc5a16e36c9eef4e02125508d26ac9c",
+      "parent": "op-allure",
+      "all-info": "span(name: Phase: Run, spanId: 7099388e66fbfa30, parentSpanId: 78c9409af64aa271, traceId: 2bc5a16e36c9eef4e02125508d26ac9c, attr: )",
+      "children": [
+        {
+          "spanId": "d42b3c983afc4592",
+          "traceId": "2bc5a16e36c9eef4e02125508d26ac9c",
+          "parent": "op-allure",
+          "all-info": "span(name: Agent, spanId: d42b3c983afc4592, parentSpanId: 7099388e66fbfa30, traceId: 2bc5a16e36c9eef4e02125508d26ac9c, attr: harness-attribute-extra-pip: com.cloudbees.workflow.rest.endpoints.FlowNodeAPI@95b3d9b:com.cloudbees.workflow.rest.endpoints.FlowNodeAPI@95b3d9b;harness-attribute-extra-pip: io.jenkins.plugins.opentelemetry.MigrateHarnessUrlChildAction@4deade6a:io.jenkins.plugins.opentelemetry.MigrateHarnessUrlChildAction@4deade6a;harness-attribute-extra-pip: org.jenkinsci.plugins.workflow.actions.TimingAction@104d22cd:org.jenkinsci.plugins.workflow.actions.TimingAction@104d22cd;harness-attribute-extra-pip: org.jenkinsci.plugins.workflow.support.actions.LogStorageAction@3c2e906e:org.jenkinsci.plugins.workflow.support.actions.LogStorageAction@3c2e906e;harness-others:;jenkins.credentials.id:[org.jenkinsci.plugins.workflow.support.actions.LogStorageAction@3c2e906e, org.jenkinsci.plugins.workflow.actions.TimingAction@104d22cd, com.cloudbees.workflow.rest.endpoints.FlowNodeAPI@f4ff7d, io.jenkins.plugins.opentelemetry.MigrateHarnessUrlChildAction@8147b6d];jenkins.pipeline.step.id:3;jenkins.pipeline.step.name:agent;jenkins.pipeline.step.plugin.name:workflow-durable-task-step;jenkins.pipeline.step.plugin.version:1353.v1891a_b_01da_18;jenkins.pipeline.step.type:node;)",
+          "children": [
+            {
+              "spanId": "e7d4a6e095376288",
+              "traceId": "2bc5a16e36c9eef4e02125508d26ac9c",
+              "parent": "op-allure",
+              "all-info": "span(name: Stage: null, spanId: e7d4a6e095376288, parentSpanId: d42b3c983afc4592, traceId: 2bc5a16e36c9eef4e02125508d26ac9c, attr: harness-attribute:{\n  \"name\" : \"Report\"\n};harness-attribute-extra-pip: com.cloudbees.workflow.rest.endpoints.FlowNodeAPI@43ce083:com.cloudbees.workflow.rest.endpoints.FlowNodeAPI@43ce083;harness-attribute-extra-pip: io.jenkins.plugins.opentelemetry.MigrateHarnessUrlChildAction@5ef3e3a2:io.jenkins.plugins.opentelemetry.MigrateHarnessUrlChildAction@5ef3e3a2;harness-attribute-extra-pip: org.jenkinsci.plugins.workflow.actions.TimingAction@69e25fba:org.jenkinsci.plugins.workflow.actions.TimingAction@69e25fba;harness-attribute-extra-pip: org.jenkinsci.plugins.workflow.support.actions.LogStorageAction@6663048a:org.jenkinsci.plugins.workflow.support.actions.LogStorageAction@6663048a;harness-others:-name-field org.jenkinsci.plugins.workflow.support.steps.StageStep name-org.jenkinsci.plugins.workflow.support.steps.StageStep.name-class java.lang.String-concurrency-field org.jenkinsci.plugins.workflow.support.steps.StageStep concurrency-org.jenkinsci.plugins.workflow.support.steps.StageStep.concurrency-class java.lang.Integer;jenkins.pipeline.step.type:stage;)",
+              "children": [
+                {
+                  "spanId": "992f057e92fcf1f5",
+                  "traceId": "2bc5a16e36c9eef4e02125508d26ac9c",
+                  "parent": "op-allure",
+                  "all-info": "span(name: Stage: Report, spanId: 992f057e92fcf1f5, parentSpanId: e7d4a6e095376288, traceId: 2bc5a16e36c9eef4e02125508d26ac9c, attr: harness-attribute-extra-pip: com.cloudbees.workflow.rest.endpoints.FlowNodeAPI@51874068:com.cloudbees.workflow.rest.endpoints.FlowNodeAPI@51874068;harness-attribute-extra-pip: io.jenkins.plugins.opentelemetry.MigrateHarnessUrlChildAction@3c4b8872:io.jenkins.plugins.opentelemetry.MigrateHarnessUrlChildAction@3c4b8872;harness-attribute-extra-pip: org.jenkinsci.plugins.workflow.actions.BodyInvocationAction@626dfbf9:org.jenkinsci.plugins.workflow.actions.BodyInvocationAction@626dfbf9;harness-attribute-extra-pip: org.jenkinsci.plugins.workflow.actions.LabelAction@7efbb50a:org.jenkinsci.plugins.workflow.actions.LabelAction@7efbb50a;harness-attribute-extra-pip: org.jenkinsci.plugins.workflow.actions.TimingAction@14ff3bd9:org.jenkinsci.plugins.workflow.actions.TimingAction@14ff3bd9;harness-others:-name-field org.jenkinsci.plugins.workflow.support.steps.StageStep name-org.jenkinsci.plugins.workflow.support.steps.StageStep.name-class java.lang.String-concurrency-field org.jenkinsci.plugins.workflow.support.steps.StageStep concurrency-org.jenkinsci.plugins.workflow.support.steps.StageStep.concurrency-class java.lang.Integer;jenkins.pipeline.step.id:16;jenkins.pipeline.step.name:Report;jenkins.pipeline.step.plugin.name:pipeline-stage-step;jenkins.pipeline.step.plugin.version:312.v8cd10304c27a_;jenkins.pipeline.step.type:stage;)",
+                  "children": [
+                    {
+                      "spanId": "68d450bb64eeef8c",
+                      "traceId": "2bc5a16e36c9eef4e02125508d26ac9c",
+                      "parent": "op-allure",
+                      "all-info": "span(name: Stage: null, spanId: 68d450bb64eeef8c, parentSpanId: 992f057e92fcf1f5, traceId: 2bc5a16e36c9eef4e02125508d26ac9c, attr: harness-attribute-extra-pip: com.cloudbees.workflow.rest.endpoints.FlowNodeAPI@70a91ad6:com.cloudbees.workflow.rest.endpoints.FlowNodeAPI@70a91ad6;harness-attribute-extra-pip: io.jenkins.plugins.opentelemetry.MigrateHarnessUrlChildAction@578100bc:io.jenkins.plugins.opentelemetry.MigrateHarnessUrlChildAction@578100bc;harness-attribute-extra-pip: org.jenkinsci.plugins.workflow.actions.BodyInvocationAction@46b9cf63:org.jenkinsci.plugins.workflow.actions.BodyInvocationAction@46b9cf63;harness-attribute-extra-pip: org.jenkinsci.plugins.workflow.actions.TimingAction@cd5392f:org.jenkinsci.plugins.workflow.actions.TimingAction@cd5392f;harness-others:-name-field org.jenkinsci.plugins.workflow.support.steps.StageStep name-org.jenkinsci.plugins.workflow.support.steps.StageStep.name-class java.lang.String-concurrency-field org.jenkinsci.plugins.workflow.support.steps.StageStep concurrency-org.jenkinsci.plugins.workflow.support.steps.StageStep.concurrency-class java.lang.Integer;jenkins.pipeline.step.type:stage;)",
+                      "name": "op-allure #3",
+                      "attributesMap": {
+                        "harness-attribute-extra-pip: io.jenkins.plugins.opentelemetry.MigrateHarnessUrlChildAction@578100bc": "io.jenkins.plugins.opentelemetry.MigrateHarnessUrlChildAction@578100bc",
+                        "harness-others": "-name-field org.jenkinsci.plugins.workflow.support.steps.StageStep name-org.jenkinsci.plugins.workflow.support.steps.StageStep.name-class java.lang.String-concurrency-field org.jenkinsci.plugins.workflow.support.steps.StageStep concurrency-org.jenkinsci.plugins.workflow.support.steps.StageStep.concurrency-class java.lang.Integer",
+                        "jenkins.pipeline.step.type": "stage",
+                        "harness-attribute-extra-pip: org.jenkinsci.plugins.workflow.actions.BodyInvocationAction@46b9cf63": "org.jenkinsci.plugins.workflow.actions.BodyInvocationAction@46b9cf63",
+                        "harness-attribute-extra-pip: org.jenkinsci.plugins.workflow.actions.TimingAction@cd5392f": "org.jenkinsci.plugins.workflow.actions.TimingAction@cd5392f",
+                        "harness-attribute-extra-pip: com.cloudbees.workflow.rest.endpoints.FlowNodeAPI@70a91ad6": "com.cloudbees.workflow.rest.endpoints.FlowNodeAPI@70a91ad6"
+                      },
+                      "type": "Run Phase Span",
+                      "parentSpanId": "992f057e92fcf1f5",
+                      "spanName": "Stage: null"
+                    },
+                    {
+                      "spanId": "3c2e01707f69932b",
+                      "traceId": "2bc5a16e36c9eef4e02125508d26ac9c",
+                      "parent": "op-allure",
+                      "all-info": "span(name: allure, spanId: 3c2e01707f69932b, parentSpanId: 992f057e92fcf1f5, traceId: 2bc5a16e36c9eef4e02125508d26ac9c, attr: ci.pipeline.run.user:SYSTEM;harness-attribute:{\n  \"delegate\" : {\n    \"symbol\" : \"allure\",\n    \"klass\" : null,\n    \"arguments\" : {\n      \"includeProperties\" : false,\n      \"jdk\" : \"\",\n      \"properties\" : [ ],\n      \"reportBuildPolicy\" : \"ALWAYS\",\n      \"results\" : [ {\n        \"path\" : \"build/allure-results\"\n      } ]\n    },\n    \"model\" : null\n  }\n};harness-attribute-extra-pip: com.cloudbees.workflow.rest.endpoints.FlowNodeAPI@4e165ef5:com.cloudbees.workflow.rest.endpoints.FlowNodeAPI@4e165ef5;harness-attribute-extra-pip: io.jenkins.plugins.opentelemetry.MigrateHarnessUrlChildAction@6741779c:io.jenkins.plugins.opentelemetry.MigrateHarnessUrlChildAction@6741779c;harness-attribute-extra-pip: org.jenkinsci.plugins.workflow.actions.TimingAction@52175a03:org.jenkinsci.plugins.workflow.actions.TimingAction@52175a03;harness-others:-delegate-field org.jenkinsci.plugins.workflow.steps.CoreStep delegate-org.jenkinsci.plugins.workflow.steps.CoreStep.delegate-interface jenkins.tasks.SimpleBuildStep;jenkins.pipeline.step.id:17;jenkins.pipeline.step.name:Allure Report;jenkins.pipeline.step.plugin.name:allure-jenkins-plugin;jenkins.pipeline.step.plugin.version:2.31.1;jenkins.pipeline.step.type:allure;)",
+                      "name": "op-allure #3",
+                      "attributesMap": {
+                        "harness-attribute-extra-pip: com.cloudbees.workflow.rest.endpoints.FlowNodeAPI@4e165ef5": "com.cloudbees.workflow.rest.endpoints.FlowNodeAPI@4e165ef5",
+                        "harness-attribute-extra-pip: org.jenkinsci.plugins.workflow.actions.TimingAction@52175a03": "org.jenkinsci.plugins.workflow.actions.TimingAction@52175a03",
+                        "harness-others": "-delegate-field org.jenkinsci.plugins.workflow.steps.CoreStep delegate-org.jenkinsci.plugins.workflow.steps.CoreStep.delegate-interface jenkins.tasks.SimpleBuildStep",
+                        "jenkins.pipeline.step.name": "Allure Report",
+                        "ci.pipeline.run.user": "SYSTEM",
+                        "jenkins.pipeline.step.id": "17",
+                        "jenkins.pipeline.step.type": "allure",
+                        "harness-attribute": "{\n  \"delegate\" : {\n    \"symbol\" : \"allure\",\n    \"klass\" : null,\n    \"arguments\" : {\n      \"includeProperties\" : false,\n      \"jdk\" : \"\",\n      \"properties\" : [ ],\n      \"reportBuildPolicy\" : \"ALWAYS\",\n      \"results\" : [ {\n        \"path\" : \"build/allure-results\"\n      } ]\n    },\n    \"model\" : null\n  }\n}",
+                        "jenkins.pipeline.step.plugin.name": "allure-jenkins-plugin",
+                        "harness-attribute-extra-pip: io.jenkins.plugins.opentelemetry.MigrateHarnessUrlChildAction@6741779c": "io.jenkins.plugins.opentelemetry.MigrateHarnessUrlChildAction@6741779c",
+                        "jenkins.pipeline.step.plugin.version": "2.31.1"
+                      },
+                      "type": "Run Phase Span",
+                      "parentSpanId": "992f057e92fcf1f5",
+                      "parameterMap": {"delegate": {
+                        "symbol": "allure",
+                        "klass": null,
+                        "arguments": {
+                          "jdk": "",
+                          "reportBuildPolicy": "ALWAYS",
+                          "results": [{"path": "build/allure-results"}],
+                          "includeProperties": false,
+                          "properties": []
+                        },
+                        "model": null
+                      }},
+                      "spanName": "allure"
+                    }
+                  ],
+                  "name": "op-allure #3",
+                  "attributesMap": {
+                    "harness-others": "-name-field org.jenkinsci.plugins.workflow.support.steps.StageStep name-org.jenkinsci.plugins.workflow.support.steps.StageStep.name-class java.lang.String-concurrency-field org.jenkinsci.plugins.workflow.support.steps.StageStep concurrency-org.jenkinsci.plugins.workflow.support.steps.StageStep.concurrency-class java.lang.Integer",
+                    "harness-attribute-extra-pip: org.jenkinsci.plugins.workflow.actions.LabelAction@7efbb50a": "org.jenkinsci.plugins.workflow.actions.LabelAction@7efbb50a",
+                    "jenkins.pipeline.step.name": "Report",
+                    "harness-attribute-extra-pip: org.jenkinsci.plugins.workflow.actions.BodyInvocationAction@626dfbf9": "org.jenkinsci.plugins.workflow.actions.BodyInvocationAction@626dfbf9",
+                    "jenkins.pipeline.step.id": "16",
+                    "jenkins.pipeline.step.type": "stage",
+                    "harness-attribute-extra-pip: com.cloudbees.workflow.rest.endpoints.FlowNodeAPI@51874068": "com.cloudbees.workflow.rest.endpoints.FlowNodeAPI@51874068",
+                    "harness-attribute-extra-pip: org.jenkinsci.plugins.workflow.actions.TimingAction@14ff3bd9": "org.jenkinsci.plugins.workflow.actions.TimingAction@14ff3bd9",
+                    "harness-attribute-extra-pip: io.jenkins.plugins.opentelemetry.MigrateHarnessUrlChildAction@3c4b8872": "io.jenkins.plugins.opentelemetry.MigrateHarnessUrlChildAction@3c4b8872",
+                    "jenkins.pipeline.step.plugin.name": "pipeline-stage-step",
+                    "jenkins.pipeline.step.plugin.version": "312.v8cd10304c27a_"
+                  },
+                  "type": "Run Phase Span",
+                  "parentSpanId": "e7d4a6e095376288",
+                  "spanName": "Stage: Report"
+                },
+                {
+                  "spanId": "c30437cca63b73c9",
+                  "traceId": "2bc5a16e36c9eef4e02125508d26ac9c",
+                  "parent": "op-allure",
+                  "all-info": "span(name: Stage: null, spanId: c30437cca63b73c9, parentSpanId: e7d4a6e095376288, traceId: 2bc5a16e36c9eef4e02125508d26ac9c, attr: harness-attribute-extra-pip: com.cloudbees.workflow.rest.endpoints.FlowNodeAPI@703f3da9:com.cloudbees.workflow.rest.endpoints.FlowNodeAPI@703f3da9;harness-attribute-extra-pip: io.jenkins.plugins.opentelemetry.MigrateHarnessUrlChildAction@6ba2398f:io.jenkins.plugins.opentelemetry.MigrateHarnessUrlChildAction@6ba2398f;harness-attribute-extra-pip: org.jenkinsci.plugins.workflow.actions.TimingAction@20bab18d:org.jenkinsci.plugins.workflow.actions.TimingAction@20bab18d;harness-others:-name-field org.jenkinsci.plugins.workflow.support.steps.StageStep name-org.jenkinsci.plugins.workflow.support.steps.StageStep.name-class java.lang.String-concurrency-field org.jenkinsci.plugins.workflow.support.steps.StageStep concurrency-org.jenkinsci.plugins.workflow.support.steps.StageStep.concurrency-class java.lang.Integer;jenkins.pipeline.step.type:stage;)",
+                  "name": "op-allure #3",
+                  "attributesMap": {
+                    "harness-attribute-extra-pip: io.jenkins.plugins.opentelemetry.MigrateHarnessUrlChildAction@6ba2398f": "io.jenkins.plugins.opentelemetry.MigrateHarnessUrlChildAction@6ba2398f",
+                    "harness-others": "-name-field org.jenkinsci.plugins.workflow.support.steps.StageStep name-org.jenkinsci.plugins.workflow.support.steps.StageStep.name-class java.lang.String-concurrency-field org.jenkinsci.plugins.workflow.support.steps.StageStep concurrency-org.jenkinsci.plugins.workflow.support.steps.StageStep.concurrency-class java.lang.Integer",
+                    "jenkins.pipeline.step.type": "stage",
+                    "harness-attribute-extra-pip: org.jenkinsci.plugins.workflow.actions.TimingAction@20bab18d": "org.jenkinsci.plugins.workflow.actions.TimingAction@20bab18d",
+                    "harness-attribute-extra-pip: com.cloudbees.workflow.rest.endpoints.FlowNodeAPI@703f3da9": "com.cloudbees.workflow.rest.endpoints.FlowNodeAPI@703f3da9"
+                  },
+                  "type": "Run Phase Span",
+                  "parentSpanId": "e7d4a6e095376288",
+                  "spanName": "Stage: null"
+                }
+              ],
+              "name": "op-allure #3",
+              "attributesMap": {
+                "harness-attribute-extra-pip: org.jenkinsci.plugins.workflow.actions.TimingAction@69e25fba": "org.jenkinsci.plugins.workflow.actions.TimingAction@69e25fba",
+                "harness-others": "-name-field org.jenkinsci.plugins.workflow.support.steps.StageStep name-org.jenkinsci.plugins.workflow.support.steps.StageStep.name-class java.lang.String-concurrency-field org.jenkinsci.plugins.workflow.support.steps.StageStep concurrency-org.jenkinsci.plugins.workflow.support.steps.StageStep.concurrency-class java.lang.Integer",
+                "harness-attribute-extra-pip: io.jenkins.plugins.opentelemetry.MigrateHarnessUrlChildAction@5ef3e3a2": "io.jenkins.plugins.opentelemetry.MigrateHarnessUrlChildAction@5ef3e3a2",
+                "jenkins.pipeline.step.type": "stage",
+                "harness-attribute": "{\n  \"name\" : \"Report\"\n}",
+                "harness-attribute-extra-pip: com.cloudbees.workflow.rest.endpoints.FlowNodeAPI@43ce083": "com.cloudbees.workflow.rest.endpoints.FlowNodeAPI@43ce083",
+                "harness-attribute-extra-pip: org.jenkinsci.plugins.workflow.support.actions.LogStorageAction@6663048a": "org.jenkinsci.plugins.workflow.support.actions.LogStorageAction@6663048a"
+              },
+              "type": "Run Phase Span",
+              "parentSpanId": "d42b3c983afc4592",
+              "parameterMap": {"name": "Report"},
+              "spanName": "Stage: null"
+            },
+            {
+              "spanId": "94f056da3701a5d5",
+              "traceId": "2bc5a16e36c9eef4e02125508d26ac9c",
+              "parent": "op-allure",
+              "all-info": "span(name: Stage: null, spanId: 94f056da3701a5d5, parentSpanId: d42b3c983afc4592, traceId: 2bc5a16e36c9eef4e02125508d26ac9c, attr: harness-attribute-extra-pip: com.cloudbees.workflow.rest.endpoints.FlowNodeAPI@d06129b:com.cloudbees.workflow.rest.endpoints.FlowNodeAPI@d06129b;harness-attribute-extra-pip: io.jenkins.plugins.opentelemetry.MigrateHarnessUrlChildAction@8462f17:io.jenkins.plugins.opentelemetry.MigrateHarnessUrlChildAction@8462f17;harness-attribute-extra-pip: org.jenkinsci.plugins.workflow.actions.TimingAction@6f9feb52:org.jenkinsci.plugins.workflow.actions.TimingAction@6f9feb52;harness-others:;jenkins.pipeline.step.type:node;)",
+              "name": "op-allure #3",
+              "attributesMap": {
+                "harness-attribute-extra-pip: org.jenkinsci.plugins.workflow.actions.TimingAction@6f9feb52": "org.jenkinsci.plugins.workflow.actions.TimingAction@6f9feb52",
+                "harness-attribute-extra-pip: io.jenkins.plugins.opentelemetry.MigrateHarnessUrlChildAction@8462f17": "io.jenkins.plugins.opentelemetry.MigrateHarnessUrlChildAction@8462f17",
+                "harness-others": "",
+                "harness-attribute-extra-pip: com.cloudbees.workflow.rest.endpoints.FlowNodeAPI@d06129b": "com.cloudbees.workflow.rest.endpoints.FlowNodeAPI@d06129b",
+                "jenkins.pipeline.step.type": "node"
+              },
+              "type": "Run Phase Span",
+              "parentSpanId": "d42b3c983afc4592",
+              "spanName": "Stage: null"
+            },
+            {
+              "spanId": "4483058dd0e9492b",
+              "traceId": "2bc5a16e36c9eef4e02125508d26ac9c",
+              "parent": "op-allure",
+              "all-info": "span(name: Stage: null, spanId: 4483058dd0e9492b, parentSpanId: d42b3c983afc4592, traceId: 2bc5a16e36c9eef4e02125508d26ac9c, attr: harness-attribute:{\n  \"name\" : \"Build\"\n};harness-attribute-extra-pip: com.cloudbees.workflow.rest.endpoints.FlowNodeAPI@33a03c24:com.cloudbees.workflow.rest.endpoints.FlowNodeAPI@33a03c24;harness-attribute-extra-pip: io.jenkins.plugins.opentelemetry.MigrateHarnessUrlChildAction@73f605b8:io.jenkins.plugins.opentelemetry.MigrateHarnessUrlChildAction@73f605b8;harness-attribute-extra-pip: org.jenkinsci.plugins.workflow.actions.TimingAction@4d6444de:org.jenkinsci.plugins.workflow.actions.TimingAction@4d6444de;harness-attribute-extra-pip: org.jenkinsci.plugins.workflow.support.actions.LogStorageAction@75c5b040:org.jenkinsci.plugins.workflow.support.actions.LogStorageAction@75c5b040;harness-others:-name-field org.jenkinsci.plugins.workflow.support.steps.StageStep name-org.jenkinsci.plugins.workflow.support.steps.StageStep.name-class java.lang.String-concurrency-field org.jenkinsci.plugins.workflow.support.steps.StageStep concurrency-org.jenkinsci.plugins.workflow.support.steps.StageStep.concurrency-class java.lang.Integer;jenkins.pipeline.step.type:stage;)",
+              "children": [
+                {
+                  "spanId": "02db936202cc9b69",
+                  "traceId": "2bc5a16e36c9eef4e02125508d26ac9c",
+                  "parent": "op-allure",
+                  "all-info": "span(name: Stage: Build, spanId: 02db936202cc9b69, parentSpanId: 4483058dd0e9492b, traceId: 2bc5a16e36c9eef4e02125508d26ac9c, attr: harness-attribute-extra-pip: com.cloudbees.workflow.rest.endpoints.FlowNodeAPI@3cb81b53:com.cloudbees.workflow.rest.endpoints.FlowNodeAPI@3cb81b53;harness-attribute-extra-pip: io.jenkins.plugins.opentelemetry.MigrateHarnessUrlChildAction@58481719:io.jenkins.plugins.opentelemetry.MigrateHarnessUrlChildAction@58481719;harness-attribute-extra-pip: org.jenkinsci.plugins.workflow.actions.BodyInvocationAction@51d585e7:org.jenkinsci.plugins.workflow.actions.BodyInvocationAction@51d585e7;harness-attribute-extra-pip: org.jenkinsci.plugins.workflow.actions.LabelAction@346a0fc2:org.jenkinsci.plugins.workflow.actions.LabelAction@346a0fc2;harness-attribute-extra-pip: org.jenkinsci.plugins.workflow.actions.TimingAction@297259d6:org.jenkinsci.plugins.workflow.actions.TimingAction@297259d6;harness-others:-name-field org.jenkinsci.plugins.workflow.support.steps.StageStep name-org.jenkinsci.plugins.workflow.support.steps.StageStep.name-class java.lang.String-concurrency-field org.jenkinsci.plugins.workflow.support.steps.StageStep concurrency-org.jenkinsci.plugins.workflow.support.steps.StageStep.concurrency-class java.lang.Integer;jenkins.pipeline.step.id:11;jenkins.pipeline.step.name:Build;jenkins.pipeline.step.plugin.name:pipeline-stage-step;jenkins.pipeline.step.plugin.version:312.v8cd10304c27a_;jenkins.pipeline.step.type:stage;)",
+                  "children": [
+                    {
+                      "spanId": "fb0fe5f91dadc565",
+                      "traceId": "2bc5a16e36c9eef4e02125508d26ac9c",
+                      "parent": "op-allure",
+                      "all-info": "span(name: Stage: null, spanId: fb0fe5f91dadc565, parentSpanId: 02db936202cc9b69, traceId: 2bc5a16e36c9eef4e02125508d26ac9c, attr: harness-attribute-extra-pip: com.cloudbees.workflow.rest.endpoints.FlowNodeAPI@726c686a:com.cloudbees.workflow.rest.endpoints.FlowNodeAPI@726c686a;harness-attribute-extra-pip: io.jenkins.plugins.opentelemetry.MigrateHarnessUrlChildAction@55e06dab:io.jenkins.plugins.opentelemetry.MigrateHarnessUrlChildAction@55e06dab;harness-attribute-extra-pip: org.jenkinsci.plugins.workflow.actions.BodyInvocationAction@11f90dc8:org.jenkinsci.plugins.workflow.actions.BodyInvocationAction@11f90dc8;harness-attribute-extra-pip: org.jenkinsci.plugins.workflow.actions.TimingAction@faf85a:org.jenkinsci.plugins.workflow.actions.TimingAction@faf85a;harness-others:-name-field org.jenkinsci.plugins.workflow.support.steps.StageStep name-org.jenkinsci.plugins.workflow.support.steps.StageStep.name-class java.lang.String-concurrency-field org.jenkinsci.plugins.workflow.support.steps.StageStep concurrency-org.jenkinsci.plugins.workflow.support.steps.StageStep.concurrency-class java.lang.Integer;jenkins.pipeline.step.type:stage;)",
+                      "name": "op-allure #3",
+                      "attributesMap": {
+                        "harness-attribute-extra-pip: org.jenkinsci.plugins.workflow.actions.BodyInvocationAction@11f90dc8": "org.jenkinsci.plugins.workflow.actions.BodyInvocationAction@11f90dc8",
+                        "harness-attribute-extra-pip: org.jenkinsci.plugins.workflow.actions.TimingAction@faf85a": "org.jenkinsci.plugins.workflow.actions.TimingAction@faf85a",
+                        "harness-others": "-name-field org.jenkinsci.plugins.workflow.support.steps.StageStep name-org.jenkinsci.plugins.workflow.support.steps.StageStep.name-class java.lang.String-concurrency-field org.jenkinsci.plugins.workflow.support.steps.StageStep concurrency-org.jenkinsci.plugins.workflow.support.steps.StageStep.concurrency-class java.lang.Integer",
+                        "jenkins.pipeline.step.type": "stage",
+                        "harness-attribute-extra-pip: com.cloudbees.workflow.rest.endpoints.FlowNodeAPI@726c686a": "com.cloudbees.workflow.rest.endpoints.FlowNodeAPI@726c686a",
+                        "harness-attribute-extra-pip: io.jenkins.plugins.opentelemetry.MigrateHarnessUrlChildAction@55e06dab": "io.jenkins.plugins.opentelemetry.MigrateHarnessUrlChildAction@55e06dab"
+                      },
+                      "type": "Run Phase Span",
+                      "parentSpanId": "02db936202cc9b69",
+                      "spanName": "Stage: null"
+                    },
+                    {
+                      "spanId": "9be189eba2a4ce62",
+                      "traceId": "2bc5a16e36c9eef4e02125508d26ac9c",
+                      "parent": "op-allure",
+                      "all-info": "span(name: sh, spanId: 9be189eba2a4ce62, parentSpanId: 02db936202cc9b69, traceId: 2bc5a16e36c9eef4e02125508d26ac9c, attr: ci.pipeline.run.user:SYSTEM;harness-attribute:{\n  \"script\" : \"./gradlew clean test\"\n};harness-attribute-extra-pip: com.cloudbees.workflow.rest.endpoints.FlowNodeAPI@47f301f0:com.cloudbees.workflow.rest.endpoints.FlowNodeAPI@47f301f0;harness-attribute-extra-pip: io.jenkins.plugins.opentelemetry.MigrateHarnessUrlChildAction@7ad9dd4d:io.jenkins.plugins.opentelemetry.MigrateHarnessUrlChildAction@7ad9dd4d;harness-attribute-extra-pip: org.jenkinsci.plugins.workflow.actions.TimingAction@430fd310:org.jenkinsci.plugins.workflow.actions.TimingAction@430fd310;harness-others:-WATCHING_RECURRENCE_PERIOD-staticField org.jenkinsci.plugins.workflow.steps.durable_task.DurableTaskStep WATCHING_RECURRENCE_PERIOD-org.jenkinsci.plugins.workflow.steps.durable_task.DurableTaskStep.WATCHING_RECURRENCE_PERIOD-long-USE_WATCHING-staticField org.jenkinsci.plugins.workflow.steps.durable_task.DurableTaskStep USE_WATCHING-org.jenkinsci.plugins.workflow.steps.durable_task.DurableTaskStep.USE_WATCHING-boolean-REMOTE_TIMEOUT-staticField org.jenkinsci.plugins.workflow.steps.durable_task.DurableTaskStep REMOTE_TIMEOUT-org.jenkinsci.plugins.workflow.steps.durable_task.DurableTaskStep.REMOTE_TIMEOUT-long;jenkins.pipeline.step.id:12;jenkins.pipeline.step.name:Shell Script;jenkins.pipeline.step.plugin.name:workflow-durable-task-step;jenkins.pipeline.step.plugin.version:1353.v1891a_b_01da_18;jenkins.pipeline.step.type:sh;)",
+                      "name": "op-allure #3",
+                      "attributesMap": {
+                        "harness-attribute-extra-pip: com.cloudbees.workflow.rest.endpoints.FlowNodeAPI@47f301f0": "com.cloudbees.workflow.rest.endpoints.FlowNodeAPI@47f301f0",
+                        "harness-others": "-WATCHING_RECURRENCE_PERIOD-staticField org.jenkinsci.plugins.workflow.steps.durable_task.DurableTaskStep WATCHING_RECURRENCE_PERIOD-org.jenkinsci.plugins.workflow.steps.durable_task.DurableTaskStep.WATCHING_RECURRENCE_PERIOD-long-USE_WATCHING-staticField org.jenkinsci.plugins.workflow.steps.durable_task.DurableTaskStep USE_WATCHING-org.jenkinsci.plugins.workflow.steps.durable_task.DurableTaskStep.USE_WATCHING-boolean-REMOTE_TIMEOUT-staticField org.jenkinsci.plugins.workflow.steps.durable_task.DurableTaskStep REMOTE_TIMEOUT-org.jenkinsci.plugins.workflow.steps.durable_task.DurableTaskStep.REMOTE_TIMEOUT-long",
+                        "jenkins.pipeline.step.name": "Shell Script",
+                        "ci.pipeline.run.user": "SYSTEM",
+                        "jenkins.pipeline.step.id": "12",
+                        "jenkins.pipeline.step.type": "sh",
+                        "harness-attribute-extra-pip: org.jenkinsci.plugins.workflow.actions.TimingAction@430fd310": "org.jenkinsci.plugins.workflow.actions.TimingAction@430fd310",
+                        "harness-attribute": "{\n  \"script\" : \"./gradlew clean test\"\n}",
+                        "harness-attribute-extra-pip: io.jenkins.plugins.opentelemetry.MigrateHarnessUrlChildAction@7ad9dd4d": "io.jenkins.plugins.opentelemetry.MigrateHarnessUrlChildAction@7ad9dd4d",
+                        "jenkins.pipeline.step.plugin.name": "workflow-durable-task-step",
+                        "jenkins.pipeline.step.plugin.version": "1353.v1891a_b_01da_18"
+                      },
+                      "type": "Run Phase Span",
+                      "parentSpanId": "02db936202cc9b69",
+                      "parameterMap": {"script": "./gradlew clean test"},
+                      "spanName": "sh"
+                    }
+                  ],
+                  "name": "op-allure #3",
+                  "attributesMap": {
+                    "harness-attribute-extra-pip: org.jenkinsci.plugins.workflow.actions.LabelAction@346a0fc2": "org.jenkinsci.plugins.workflow.actions.LabelAction@346a0fc2",
+                    "harness-attribute-extra-pip: io.jenkins.plugins.opentelemetry.MigrateHarnessUrlChildAction@58481719": "io.jenkins.plugins.opentelemetry.MigrateHarnessUrlChildAction@58481719",
+                    "harness-others": "-name-field org.jenkinsci.plugins.workflow.support.steps.StageStep name-org.jenkinsci.plugins.workflow.support.steps.StageStep.name-class java.lang.String-concurrency-field org.jenkinsci.plugins.workflow.support.steps.StageStep concurrency-org.jenkinsci.plugins.workflow.support.steps.StageStep.concurrency-class java.lang.Integer",
+                    "jenkins.pipeline.step.name": "Build",
+                    "harness-attribute-extra-pip: org.jenkinsci.plugins.workflow.actions.BodyInvocationAction@51d585e7": "org.jenkinsci.plugins.workflow.actions.BodyInvocationAction@51d585e7",
+                    "jenkins.pipeline.step.id": "11",
+                    "jenkins.pipeline.step.type": "stage",
+                    "harness-attribute-extra-pip: com.cloudbees.workflow.rest.endpoints.FlowNodeAPI@3cb81b53": "com.cloudbees.workflow.rest.endpoints.FlowNodeAPI@3cb81b53",
+                    "jenkins.pipeline.step.plugin.name": "pipeline-stage-step",
+                    "harness-attribute-extra-pip: org.jenkinsci.plugins.workflow.actions.TimingAction@297259d6": "org.jenkinsci.plugins.workflow.actions.TimingAction@297259d6",
+                    "jenkins.pipeline.step.plugin.version": "312.v8cd10304c27a_"
+                  },
+                  "type": "Run Phase Span",
+                  "parentSpanId": "4483058dd0e9492b",
+                  "spanName": "Stage: Build"
+                },
+                {
+                  "spanId": "c86c314b77daf17b",
+                  "traceId": "2bc5a16e36c9eef4e02125508d26ac9c",
+                  "parent": "op-allure",
+                  "all-info": "span(name: Stage: null, spanId: c86c314b77daf17b, parentSpanId: 4483058dd0e9492b, traceId: 2bc5a16e36c9eef4e02125508d26ac9c, attr: harness-attribute-extra-pip: com.cloudbees.workflow.rest.endpoints.FlowNodeAPI@70de0fda:com.cloudbees.workflow.rest.endpoints.FlowNodeAPI@70de0fda;harness-attribute-extra-pip: io.jenkins.plugins.opentelemetry.MigrateHarnessUrlChildAction@3ed9904c:io.jenkins.plugins.opentelemetry.MigrateHarnessUrlChildAction@3ed9904c;harness-attribute-extra-pip: org.jenkinsci.plugins.workflow.actions.TimingAction@524f4b03:org.jenkinsci.plugins.workflow.actions.TimingAction@524f4b03;harness-others:-name-field org.jenkinsci.plugins.workflow.support.steps.StageStep name-org.jenkinsci.plugins.workflow.support.steps.StageStep.name-class java.lang.String-concurrency-field org.jenkinsci.plugins.workflow.support.steps.StageStep concurrency-org.jenkinsci.plugins.workflow.support.steps.StageStep.concurrency-class java.lang.Integer;jenkins.pipeline.step.type:stage;)",
+                  "name": "op-allure #3",
+                  "attributesMap": {
+                    "harness-attribute-extra-pip: org.jenkinsci.plugins.workflow.actions.TimingAction@524f4b03": "org.jenkinsci.plugins.workflow.actions.TimingAction@524f4b03",
+                    "harness-attribute-extra-pip: com.cloudbees.workflow.rest.endpoints.FlowNodeAPI@70de0fda": "com.cloudbees.workflow.rest.endpoints.FlowNodeAPI@70de0fda",
+                    "harness-others": "-name-field org.jenkinsci.plugins.workflow.support.steps.StageStep name-org.jenkinsci.plugins.workflow.support.steps.StageStep.name-class java.lang.String-concurrency-field org.jenkinsci.plugins.workflow.support.steps.StageStep concurrency-org.jenkinsci.plugins.workflow.support.steps.StageStep.concurrency-class java.lang.Integer",
+                    "jenkins.pipeline.step.type": "stage",
+                    "harness-attribute-extra-pip: io.jenkins.plugins.opentelemetry.MigrateHarnessUrlChildAction@3ed9904c": "io.jenkins.plugins.opentelemetry.MigrateHarnessUrlChildAction@3ed9904c"
+                  },
+                  "type": "Run Phase Span",
+                  "parentSpanId": "4483058dd0e9492b",
+                  "spanName": "Stage: null"
+                }
+              ],
+              "name": "op-allure #3",
+              "attributesMap": {
+                "harness-others": "-name-field org.jenkinsci.plugins.workflow.support.steps.StageStep name-org.jenkinsci.plugins.workflow.support.steps.StageStep.name-class java.lang.String-concurrency-field org.jenkinsci.plugins.workflow.support.steps.StageStep concurrency-org.jenkinsci.plugins.workflow.support.steps.StageStep.concurrency-class java.lang.Integer",
+                "harness-attribute-extra-pip: org.jenkinsci.plugins.workflow.actions.TimingAction@4d6444de": "org.jenkinsci.plugins.workflow.actions.TimingAction@4d6444de",
+                "harness-attribute-extra-pip: org.jenkinsci.plugins.workflow.support.actions.LogStorageAction@75c5b040": "org.jenkinsci.plugins.workflow.support.actions.LogStorageAction@75c5b040",
+                "jenkins.pipeline.step.type": "stage",
+                "harness-attribute": "{\n  \"name\" : \"Build\"\n}",
+                "harness-attribute-extra-pip: io.jenkins.plugins.opentelemetry.MigrateHarnessUrlChildAction@73f605b8": "io.jenkins.plugins.opentelemetry.MigrateHarnessUrlChildAction@73f605b8",
+                "harness-attribute-extra-pip: com.cloudbees.workflow.rest.endpoints.FlowNodeAPI@33a03c24": "com.cloudbees.workflow.rest.endpoints.FlowNodeAPI@33a03c24"
+              },
+              "type": "Run Phase Span",
+              "parentSpanId": "d42b3c983afc4592",
+              "parameterMap": {"name": "Build"},
+              "spanName": "Stage: null"
+            },
+            {
+              "spanId": "9a668faa726dc3fc",
+              "traceId": "2bc5a16e36c9eef4e02125508d26ac9c",
+              "parent": "op-allure",
+              "all-info": "span(name: Stage: null, spanId: 9a668faa726dc3fc, parentSpanId: d42b3c983afc4592, traceId: 2bc5a16e36c9eef4e02125508d26ac9c, attr: harness-attribute-extra-pip: com.cloudbees.workflow.rest.endpoints.FlowNodeAPI@5f028baf:com.cloudbees.workflow.rest.endpoints.FlowNodeAPI@5f028baf;harness-attribute-extra-pip: io.jenkins.plugins.opentelemetry.MigrateHarnessUrlChildAction@3cc6239c:io.jenkins.plugins.opentelemetry.MigrateHarnessUrlChildAction@3cc6239c;harness-attribute-extra-pip: org.jenkinsci.plugins.workflow.actions.BodyInvocationAction@7502530:org.jenkinsci.plugins.workflow.actions.BodyInvocationAction@7502530;harness-attribute-extra-pip: org.jenkinsci.plugins.workflow.actions.TimingAction@6891e585:org.jenkinsci.plugins.workflow.actions.TimingAction@6891e585;harness-others:;jenkins.pipeline.step.type:node;)",
+              "name": "op-allure #3",
+              "attributesMap": {
+                "harness-attribute-extra-pip: org.jenkinsci.plugins.workflow.actions.BodyInvocationAction@7502530": "org.jenkinsci.plugins.workflow.actions.BodyInvocationAction@7502530",
+                "harness-attribute-extra-pip: com.cloudbees.workflow.rest.endpoints.FlowNodeAPI@5f028baf": "com.cloudbees.workflow.rest.endpoints.FlowNodeAPI@5f028baf",
+                "harness-others": "",
+                "jenkins.pipeline.step.type": "node",
+                "harness-attribute-extra-pip: io.jenkins.plugins.opentelemetry.MigrateHarnessUrlChildAction@3cc6239c": "io.jenkins.plugins.opentelemetry.MigrateHarnessUrlChildAction@3cc6239c",
+                "harness-attribute-extra-pip: org.jenkinsci.plugins.workflow.actions.TimingAction@6891e585": "org.jenkinsci.plugins.workflow.actions.TimingAction@6891e585"
+              },
+              "type": "Run Phase Span",
+              "parentSpanId": "d42b3c983afc4592",
+              "spanName": "Stage: null"
+            },
+            {
+              "spanId": "52dfeb32408ce6e9",
+              "traceId": "2bc5a16e36c9eef4e02125508d26ac9c",
+              "parent": "op-allure",
+              "all-info": "span(name: Stage: null, spanId: 52dfeb32408ce6e9, parentSpanId: d42b3c983afc4592, traceId: 2bc5a16e36c9eef4e02125508d26ac9c, attr: harness-attribute:{\n  \"name\" : \"Checkout\"\n};harness-attribute-extra-pip: com.cloudbees.workflow.rest.endpoints.FlowNodeAPI@7add06de:com.cloudbees.workflow.rest.endpoints.FlowNodeAPI@7add06de;harness-attribute-extra-pip: io.jenkins.plugins.opentelemetry.MigrateHarnessUrlChildAction@64be8a82:io.jenkins.plugins.opentelemetry.MigrateHarnessUrlChildAction@64be8a82;harness-attribute-extra-pip: org.jenkinsci.plugins.workflow.actions.TimingAction@2ac874d4:org.jenkinsci.plugins.workflow.actions.TimingAction@2ac874d4;harness-attribute-extra-pip: org.jenkinsci.plugins.workflow.support.actions.LogStorageAction@5bb7579a:org.jenkinsci.plugins.workflow.support.actions.LogStorageAction@5bb7579a;harness-others:-name-field org.jenkinsci.plugins.workflow.support.steps.StageStep name-org.jenkinsci.plugins.workflow.support.steps.StageStep.name-class java.lang.String-concurrency-field org.jenkinsci.plugins.workflow.support.steps.StageStep concurrency-org.jenkinsci.plugins.workflow.support.steps.StageStep.concurrency-class java.lang.Integer;jenkins.pipeline.step.type:stage;)",
+              "children": [
+                {
+                  "spanId": "f08f3ee106ec6ed7",
+                  "traceId": "2bc5a16e36c9eef4e02125508d26ac9c",
+                  "parent": "op-allure",
+                  "all-info": "span(name: Stage: Checkout, spanId: f08f3ee106ec6ed7, parentSpanId: 52dfeb32408ce6e9, traceId: 2bc5a16e36c9eef4e02125508d26ac9c, attr: harness-attribute-extra-pip: com.cloudbees.workflow.rest.endpoints.FlowNodeAPI@6a56510b:com.cloudbees.workflow.rest.endpoints.FlowNodeAPI@6a56510b;harness-attribute-extra-pip: io.jenkins.plugins.opentelemetry.MigrateHarnessUrlChildAction@7d592ce0:io.jenkins.plugins.opentelemetry.MigrateHarnessUrlChildAction@7d592ce0;harness-attribute-extra-pip: org.jenkinsci.plugins.workflow.actions.BodyInvocationAction@30943cab:org.jenkinsci.plugins.workflow.actions.BodyInvocationAction@30943cab;harness-attribute-extra-pip: org.jenkinsci.plugins.workflow.actions.LabelAction@5c190179:org.jenkinsci.plugins.workflow.actions.LabelAction@5c190179;harness-attribute-extra-pip: org.jenkinsci.plugins.workflow.actions.TimingAction@429aa049:org.jenkinsci.plugins.workflow.actions.TimingAction@429aa049;harness-others:-name-field org.jenkinsci.plugins.workflow.support.steps.StageStep name-org.jenkinsci.plugins.workflow.support.steps.StageStep.name-class java.lang.String-concurrency-field org.jenkinsci.plugins.workflow.support.steps.StageStep concurrency-org.jenkinsci.plugins.workflow.support.steps.StageStep.concurrency-class java.lang.Integer;jenkins.pipeline.step.id:6;jenkins.pipeline.step.name:Checkout;jenkins.pipeline.step.plugin.name:pipeline-stage-step;jenkins.pipeline.step.plugin.version:312.v8cd10304c27a_;jenkins.pipeline.step.type:stage;)",
+                  "children": [
+                    {
+                      "spanId": "f40148d93b5b5679",
+                      "traceId": "2bc5a16e36c9eef4e02125508d26ac9c",
+                      "parent": "op-allure",
+                      "all-info": "span(name: Stage: null, spanId: f40148d93b5b5679, parentSpanId: f08f3ee106ec6ed7, traceId: 2bc5a16e36c9eef4e02125508d26ac9c, attr: harness-attribute-extra-pip: com.cloudbees.workflow.rest.endpoints.FlowNodeAPI@24f156e1:com.cloudbees.workflow.rest.endpoints.FlowNodeAPI@24f156e1;harness-attribute-extra-pip: io.jenkins.plugins.opentelemetry.MigrateHarnessUrlChildAction@58bdea9:io.jenkins.plugins.opentelemetry.MigrateHarnessUrlChildAction@58bdea9;harness-attribute-extra-pip: org.jenkinsci.plugins.workflow.actions.BodyInvocationAction@6d83d61:org.jenkinsci.plugins.workflow.actions.BodyInvocationAction@6d83d61;harness-attribute-extra-pip: org.jenkinsci.plugins.workflow.actions.TimingAction@46c7e023:org.jenkinsci.plugins.workflow.actions.TimingAction@46c7e023;harness-others:-name-field org.jenkinsci.plugins.workflow.support.steps.StageStep name-org.jenkinsci.plugins.workflow.support.steps.StageStep.name-class java.lang.String-concurrency-field org.jenkinsci.plugins.workflow.support.steps.StageStep concurrency-org.jenkinsci.plugins.workflow.support.steps.StageStep.concurrency-class java.lang.Integer;jenkins.pipeline.step.type:stage;)",
+                      "name": "op-allure #3",
+                      "attributesMap": {
+                        "harness-attribute-extra-pip: com.cloudbees.workflow.rest.endpoints.FlowNodeAPI@24f156e1": "com.cloudbees.workflow.rest.endpoints.FlowNodeAPI@24f156e1",
+                        "harness-attribute-extra-pip: io.jenkins.plugins.opentelemetry.MigrateHarnessUrlChildAction@58bdea9": "io.jenkins.plugins.opentelemetry.MigrateHarnessUrlChildAction@58bdea9",
+                        "harness-attribute-extra-pip: org.jenkinsci.plugins.workflow.actions.TimingAction@46c7e023": "org.jenkinsci.plugins.workflow.actions.TimingAction@46c7e023",
+                        "harness-others": "-name-field org.jenkinsci.plugins.workflow.support.steps.StageStep name-org.jenkinsci.plugins.workflow.support.steps.StageStep.name-class java.lang.String-concurrency-field org.jenkinsci.plugins.workflow.support.steps.StageStep concurrency-org.jenkinsci.plugins.workflow.support.steps.StageStep.concurrency-class java.lang.Integer",
+                        "jenkins.pipeline.step.type": "stage",
+                        "harness-attribute-extra-pip: org.jenkinsci.plugins.workflow.actions.BodyInvocationAction@6d83d61": "org.jenkinsci.plugins.workflow.actions.BodyInvocationAction@6d83d61"
+                      },
+                      "type": "Run Phase Span",
+                      "parentSpanId": "f08f3ee106ec6ed7",
+                      "spanName": "Stage: null"
+                    },
+                    {
+                      "spanId": "4180791a2b68d19f",
+                      "traceId": "2bc5a16e36c9eef4e02125508d26ac9c",
+                      "parent": "op-allure",
+                      "all-info": "span(name: git: github.com/eroshenkoam/allure-example, spanId: 4180791a2b68d19f, parentSpanId: f08f3ee106ec6ed7, traceId: 2bc5a16e36c9eef4e02125508d26ac9c, attr: ci.pipeline.run.user:SYSTEM;git.branch:master;git.repository:eroshenkoam/allure-example;harness-attribute:{\n  \"branch\" : \"master\",\n  \"url\" : \"https://github.com/eroshenkoam/allure-example.git\"\n};harness-attribute-extra-pip: com.cloudbees.workflow.rest.endpoints.FlowNodeAPI@2e9d3193:com.cloudbees.workflow.rest.endpoints.FlowNodeAPI@2e9d3193;harness-attribute-extra-pip: io.jenkins.plugins.opentelemetry.MigrateHarnessUrlChildAction@2681539:io.jenkins.plugins.opentelemetry.MigrateHarnessUrlChildAction@2681539;harness-attribute-extra-pip: org.jenkinsci.plugins.workflow.actions.TimingAction@4984a158:org.jenkinsci.plugins.workflow.actions.TimingAction@4984a158;harness-others:;http.method:POST;http.url:https://github.com/eroshenkoam/allure-example.git;jenkins.pipeline.step.id:7;jenkins.pipeline.step.name:Git;jenkins.pipeline.step.plugin.name:git;jenkins.pipeline.step.plugin.version:5.2.2;jenkins.pipeline.step.type:git;net.peer.name:github.com;peer.service:github.com;rpc.method:checkout;rpc.service:git;rpc.system:https;)",
+                      "name": "op-allure #3",
+                      "attributesMap": {
+                        "jenkins.pipeline.step.name": "Git",
+                        "rpc.service": "git",
+                        "ci.pipeline.run.user": "SYSTEM",
+                        "jenkins.pipeline.step.id": "7",
+                        "harness-attribute-extra-pip: com.cloudbees.workflow.rest.endpoints.FlowNodeAPI@2e9d3193": "com.cloudbees.workflow.rest.endpoints.FlowNodeAPI@2e9d3193",
+                        "http.url": "https://github.com/eroshenkoam/allure-example.git",
+                        "git.branch": "master",
+                        "harness-attribute": "{\n  \"branch\" : \"master\",\n  \"url\" : \"https://github.com/eroshenkoam/allure-example.git\"\n}",
+                        "rpc.system": "https",
+                        "harness-attribute-extra-pip: org.jenkinsci.plugins.workflow.actions.TimingAction@4984a158": "org.jenkinsci.plugins.workflow.actions.TimingAction@4984a158",
+                        "git.repository": "eroshenkoam/allure-example",
+                        "net.peer.name": "github.com",
+                        "harness-attribute-extra-pip: io.jenkins.plugins.opentelemetry.MigrateHarnessUrlChildAction@2681539": "io.jenkins.plugins.opentelemetry.MigrateHarnessUrlChildAction@2681539",
+                        "harness-others": "",
+                        "peer.service": "github.com",
+                        "jenkins.pipeline.step.type": "git",
+                        "rpc.method": "checkout",
+                        "jenkins.pipeline.step.plugin.name": "git",
+                        "http.method": "POST",
+                        "jenkins.pipeline.step.plugin.version": "5.2.2"
+                      },
+                      "type": "Run Phase Span",
+                      "parentSpanId": "f08f3ee106ec6ed7",
+                      "parameterMap": {
+                        "branch": "master",
+                        "url": "https://github.com/eroshenkoam/allure-example.git"
+                      },
+                      "spanName": "git: github.com/eroshenkoam/allure-example"
+                    }
+                  ],
+                  "name": "op-allure #3",
+                  "attributesMap": {
+                    "harness-attribute-extra-pip: io.jenkins.plugins.opentelemetry.MigrateHarnessUrlChildAction@7d592ce0": "io.jenkins.plugins.opentelemetry.MigrateHarnessUrlChildAction@7d592ce0",
+                    "harness-attribute-extra-pip: org.jenkinsci.plugins.workflow.actions.BodyInvocationAction@30943cab": "org.jenkinsci.plugins.workflow.actions.BodyInvocationAction@30943cab",
+                    "harness-others": "-name-field org.jenkinsci.plugins.workflow.support.steps.StageStep name-org.jenkinsci.plugins.workflow.support.steps.StageStep.name-class java.lang.String-concurrency-field org.jenkinsci.plugins.workflow.support.steps.StageStep concurrency-org.jenkinsci.plugins.workflow.support.steps.StageStep.concurrency-class java.lang.Integer",
+                    "harness-attribute-extra-pip: org.jenkinsci.plugins.workflow.actions.TimingAction@429aa049": "org.jenkinsci.plugins.workflow.actions.TimingAction@429aa049",
+                    "jenkins.pipeline.step.name": "Checkout",
+                    "harness-attribute-extra-pip: org.jenkinsci.plugins.workflow.actions.LabelAction@5c190179": "org.jenkinsci.plugins.workflow.actions.LabelAction@5c190179",
+                    "jenkins.pipeline.step.id": "6",
+                    "jenkins.pipeline.step.type": "stage",
+                    "harness-attribute-extra-pip: com.cloudbees.workflow.rest.endpoints.FlowNodeAPI@6a56510b": "com.cloudbees.workflow.rest.endpoints.FlowNodeAPI@6a56510b",
+                    "jenkins.pipeline.step.plugin.name": "pipeline-stage-step",
+                    "jenkins.pipeline.step.plugin.version": "312.v8cd10304c27a_"
+                  },
+                  "type": "Run Phase Span",
+                  "parentSpanId": "52dfeb32408ce6e9",
+                  "spanName": "Stage: Checkout"
+                },
+                {
+                  "spanId": "3d569ca4b1cc6f96",
+                  "traceId": "2bc5a16e36c9eef4e02125508d26ac9c",
+                  "parent": "op-allure",
+                  "all-info": "span(name: Stage: null, spanId: 3d569ca4b1cc6f96, parentSpanId: 52dfeb32408ce6e9, traceId: 2bc5a16e36c9eef4e02125508d26ac9c, attr: harness-attribute-extra-pip: com.cloudbees.workflow.rest.endpoints.FlowNodeAPI@48fa96a:com.cloudbees.workflow.rest.endpoints.FlowNodeAPI@48fa96a;harness-attribute-extra-pip: io.jenkins.plugins.opentelemetry.MigrateHarnessUrlChildAction@5cd60b07:io.jenkins.plugins.opentelemetry.MigrateHarnessUrlChildAction@5cd60b07;harness-attribute-extra-pip: org.jenkinsci.plugins.workflow.actions.TimingAction@28440412:org.jenkinsci.plugins.workflow.actions.TimingAction@28440412;harness-others:-name-field org.jenkinsci.plugins.workflow.support.steps.StageStep name-org.jenkinsci.plugins.workflow.support.steps.StageStep.name-class java.lang.String-concurrency-field org.jenkinsci.plugins.workflow.support.steps.StageStep concurrency-org.jenkinsci.plugins.workflow.support.steps.StageStep.concurrency-class java.lang.Integer;jenkins.pipeline.step.type:stage;)",
+                  "name": "op-allure #3",
+                  "attributesMap": {
+                    "harness-attribute-extra-pip: com.cloudbees.workflow.rest.endpoints.FlowNodeAPI@48fa96a": "com.cloudbees.workflow.rest.endpoints.FlowNodeAPI@48fa96a",
+                    "harness-others": "-name-field org.jenkinsci.plugins.workflow.support.steps.StageStep name-org.jenkinsci.plugins.workflow.support.steps.StageStep.name-class java.lang.String-concurrency-field org.jenkinsci.plugins.workflow.support.steps.StageStep concurrency-org.jenkinsci.plugins.workflow.support.steps.StageStep.concurrency-class java.lang.Integer",
+                    "jenkins.pipeline.step.type": "stage",
+                    "harness-attribute-extra-pip: org.jenkinsci.plugins.workflow.actions.TimingAction@28440412": "org.jenkinsci.plugins.workflow.actions.TimingAction@28440412",
+                    "harness-attribute-extra-pip: io.jenkins.plugins.opentelemetry.MigrateHarnessUrlChildAction@5cd60b07": "io.jenkins.plugins.opentelemetry.MigrateHarnessUrlChildAction@5cd60b07"
+                  },
+                  "type": "Run Phase Span",
+                  "parentSpanId": "52dfeb32408ce6e9",
+                  "spanName": "Stage: null"
+                }
+              ],
+              "name": "op-allure #3",
+              "attributesMap": {
+                "harness-attribute-extra-pip: org.jenkinsci.plugins.workflow.actions.TimingAction@2ac874d4": "org.jenkinsci.plugins.workflow.actions.TimingAction@2ac874d4",
+                "harness-attribute-extra-pip: io.jenkins.plugins.opentelemetry.MigrateHarnessUrlChildAction@64be8a82": "io.jenkins.plugins.opentelemetry.MigrateHarnessUrlChildAction@64be8a82",
+                "harness-attribute-extra-pip: org.jenkinsci.plugins.workflow.support.actions.LogStorageAction@5bb7579a": "org.jenkinsci.plugins.workflow.support.actions.LogStorageAction@5bb7579a",
+                "harness-others": "-name-field org.jenkinsci.plugins.workflow.support.steps.StageStep name-org.jenkinsci.plugins.workflow.support.steps.StageStep.name-class java.lang.String-concurrency-field org.jenkinsci.plugins.workflow.support.steps.StageStep concurrency-org.jenkinsci.plugins.workflow.support.steps.StageStep.concurrency-class java.lang.Integer",
+                "jenkins.pipeline.step.type": "stage",
+                "harness-attribute-extra-pip: com.cloudbees.workflow.rest.endpoints.FlowNodeAPI@7add06de": "com.cloudbees.workflow.rest.endpoints.FlowNodeAPI@7add06de",
+                "harness-attribute": "{\n  \"name\" : \"Checkout\"\n}"
+              },
+              "type": "Run Phase Span",
+              "parentSpanId": "d42b3c983afc4592",
+              "parameterMap": {"name": "Checkout"},
+              "spanName": "Stage: null"
+            }
+          ],
+          "name": "op-allure #3",
+          "attributesMap": {
+            "harness-others": "",
+            "jenkins.pipeline.step.name": "agent",
+            "jenkins.pipeline.step.id": "3",
+            "harness-attribute-extra-pip: org.jenkinsci.plugins.workflow.support.actions.LogStorageAction@3c2e906e": "org.jenkinsci.plugins.workflow.support.actions.LogStorageAction@3c2e906e",
+            "jenkins.pipeline.step.type": "node",
+            "harness-attribute-extra-pip: com.cloudbees.workflow.rest.endpoints.FlowNodeAPI@95b3d9b": "com.cloudbees.workflow.rest.endpoints.FlowNodeAPI@95b3d9b",
+            "jenkins.credentials.id": "[org.jenkinsci.plugins.workflow.support.actions.LogStorageAction@3c2e906e, org.jenkinsci.plugins.workflow.actions.TimingAction@104d22cd, com.cloudbees.workflow.rest.endpoints.FlowNodeAPI@f4ff7d, io.jenkins.plugins.opentelemetry.MigrateHarnessUrlChildAction@8147b6d]",
+            "harness-attribute-extra-pip: org.jenkinsci.plugins.workflow.actions.TimingAction@104d22cd": "org.jenkinsci.plugins.workflow.actions.TimingAction@104d22cd",
+            "jenkins.pipeline.step.plugin.name": "workflow-durable-task-step",
+            "harness-attribute-extra-pip: io.jenkins.plugins.opentelemetry.MigrateHarnessUrlChildAction@4deade6a": "io.jenkins.plugins.opentelemetry.MigrateHarnessUrlChildAction@4deade6a",
+            "jenkins.pipeline.step.plugin.version": "1353.v1891a_b_01da_18"
+          },
+          "type": "Run Phase Span",
+          "parentSpanId": "7099388e66fbfa30",
+          "spanName": "Agent"
+        },
+        {
+          "spanId": "34488b6b41b6e675",
+          "traceId": "2bc5a16e36c9eef4e02125508d26ac9c",
+          "parent": "op-allure",
+          "all-info": "span(name: Agent Allocation, spanId: 34488b6b41b6e675, parentSpanId: 7099388e66fbfa30, traceId: 2bc5a16e36c9eef4e02125508d26ac9c, attr: harness-attribute-extra-pip: FlowNodeMonitoringAction{traceId='2bc5a16e36c9eef4e02125508d26ac9c', spanId='d42b3c983afc4592', span.name='Agent'}:FlowNodeMonitoringAction{traceId='2bc5a16e36c9eef4e02125508d26ac9c', spanId='d42b3c983afc4592', span.name='Agent'};harness-attribute-extra-pip: com.cloudbees.workflow.rest.endpoints.FlowNodeAPI@18a27343:com.cloudbees.workflow.rest.endpoints.FlowNodeAPI@18a27343;harness-attribute-extra-pip: io.jenkins.plugins.opentelemetry.MigrateHarnessUrlChildAction@318a22cc:io.jenkins.plugins.opentelemetry.MigrateHarnessUrlChildAction@318a22cc;harness-attribute-extra-pip: org.jenkinsci.plugins.workflow.actions.TimingAction@104d22cd:org.jenkinsci.plugins.workflow.actions.TimingAction@104d22cd;harness-attribute-extra-pip: org.jenkinsci.plugins.workflow.support.actions.LogStorageAction@3c2e906e:org.jenkinsci.plugins.workflow.support.actions.LogStorageAction@3c2e906e;harness-others:;jenkins.pipeline.step.id:3;jenkins.pipeline.step.name:agent.allocate;jenkins.pipeline.step.plugin.name:workflow-durable-task-step;jenkins.pipeline.step.plugin.version:1353.v1891a_b_01da_18;jenkins.pipeline.step.type:node;)",
+          "name": "op-allure #3",
+          "attributesMap": {
+            "harness-attribute-extra-pip: io.jenkins.plugins.opentelemetry.MigrateHarnessUrlChildAction@318a22cc": "io.jenkins.plugins.opentelemetry.MigrateHarnessUrlChildAction@318a22cc",
+            "harness-others": "",
+            "jenkins.pipeline.step.name": "agent.allocate",
+            "jenkins.pipeline.step.id": "3",
+            "harness-attribute-extra-pip: org.jenkinsci.plugins.workflow.support.actions.LogStorageAction@3c2e906e": "org.jenkinsci.plugins.workflow.support.actions.LogStorageAction@3c2e906e",
+            "jenkins.pipeline.step.type": "node",
+            "harness-attribute-extra-pip: com.cloudbees.workflow.rest.endpoints.FlowNodeAPI@18a27343": "com.cloudbees.workflow.rest.endpoints.FlowNodeAPI@18a27343",
+            "harness-attribute-extra-pip: org.jenkinsci.plugins.workflow.actions.TimingAction@104d22cd": "org.jenkinsci.plugins.workflow.actions.TimingAction@104d22cd",
+            "jenkins.pipeline.step.plugin.name": "workflow-durable-task-step",
+            "jenkins.pipeline.step.plugin.version": "1353.v1891a_b_01da_18",
+            "harness-attribute-extra-pip: FlowNodeMonitoringAction{traceId='2bc5a16e36c9eef4e02125508d26ac9c', spanId='d42b3c983afc4592', span.name='Agent'}": "FlowNodeMonitoringAction{traceId='2bc5a16e36c9eef4e02125508d26ac9c', spanId='d42b3c983afc4592', span.name='Agent'}"
+          },
+          "type": "Run Phase Span",
+          "parentSpanId": "7099388e66fbfa30",
+          "spanName": "Agent Allocation"
+        }
+      ],
+      "name": "op-allure #3",
+      "attributesMap": {},
+      "type": "Run Phase Span",
+      "parentSpanId": "78c9409af64aa271",
+      "spanName": "Phase: Run"
+    },
+    {
+      "spanId": "112b17434487b1d7",
+      "traceId": "2bc5a16e36c9eef4e02125508d26ac9c",
+      "parent": "op-allure",
+      "all-info": "span(name: Phase: Start, spanId: 112b17434487b1d7, parentSpanId: 78c9409af64aa271, traceId: 2bc5a16e36c9eef4e02125508d26ac9c, attr: )",
+      "name": "op-allure #3",
+      "attributesMap": {},
+      "type": "Run Phase Span",
+      "parentSpanId": "78c9409af64aa271",
+      "spanName": "Phase: Start"
+    }
+  ],
+  "name": "op-allure #3",
+  "parentSpanId": "0000000000000000",
+  "spanName": "op-allure #3"
+}

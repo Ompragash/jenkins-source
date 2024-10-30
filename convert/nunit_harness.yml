@@ -1,0 +1,50 @@
+pipeline:
+  identifier: default
+  name: default
+  orgIdentifier: default
+  projectIdentifier: default
+  properties:
+    ci:
+      codebase:
+        build: <+input>
+  stages:
+  - stage:
+      identifier: build
+      name: build
+      spec:
+        cloneCodebase: true
+        execution:
+          steps:
+          - stepGroup:
+              identifier: Stage__nullcd9cd6
+              name: Run NUnit
+              steps:
+              - step:
+                  identifier: sh66a841
+                  name: sh
+                  spec:
+                    command: "\n                    curl -o 'TestResult.xml' 'https://raw.githubusercontent.com/harness-community/test-jenkins-to-harness/refs/heads/main/nunit-test-result.xml'\n
+                      \                   "
+                    image: alpine
+                    shell: Sh
+                  timeout: ""
+                  type: Run
+              - step:
+                  identifier: nunit386bfb
+                  name: nunit
+                  spec:
+                    image: plugins/nunit
+                    settings:
+                      fail_if_no_results: "true"
+                      failed_tests_fail_build: "true"
+                      test_report_path: TestResult.xml
+                  timeout: ""
+                  type: Plugin
+              timeout: ""
+        platform:
+          arch: Amd64
+          os: Linux
+        runtime:
+          spec: {}
+          type: Cloud
+      type: CI

@@ -1,0 +1,594 @@
+{
+  "traceId": "12b7b0c051b529b5aeffaa0b2c269b8a",
+  "spanId": "69af8475af40c75e",
+  "harnessVersion": "2.18.13-SNAPSHOT",
+  "children": [
+    {
+      "spanId": "6ed7401d8a5e01ea",
+      "traceId": "12b7b0c051b529b5aeffaa0b2c269b8a",
+      "parent": "op-jacoco",
+      "all-info": "span(name: Phase: Run, spanId: 6ed7401d8a5e01ea, parentSpanId: 69af8475af40c75e, traceId: 12b7b0c051b529b5aeffaa0b2c269b8a, attr: )",
+      "children": [
+        {
+          "spanId": "b2afae0eb080defe",
+          "traceId": "12b7b0c051b529b5aeffaa0b2c269b8a",
+          "parent": "op-jacoco",
+          "all-info": "span(name: Agent Allocation, spanId: b2afae0eb080defe, parentSpanId: 6ed7401d8a5e01ea, traceId: 12b7b0c051b529b5aeffaa0b2c269b8a, attr: harness-attribute-extra-pip: FlowNodeMonitoringAction{traceId='12b7b0c051b529b5aeffaa0b2c269b8a', spanId='72e066255368f652', span.name='Agent'}:FlowNodeMonitoringAction{traceId='12b7b0c051b529b5aeffaa0b2c269b8a', spanId='72e066255368f652', span.name='Agent'};harness-attribute-extra-pip: com.cloudbees.workflow.rest.endpoints.FlowNodeAPI@3ce82e80:com.cloudbees.workflow.rest.endpoints.FlowNodeAPI@3ce82e80;harness-attribute-extra-pip: io.jenkins.plugins.opentelemetry.MigrateHarnessUrlChildAction@48edfef0:io.jenkins.plugins.opentelemetry.MigrateHarnessUrlChildAction@48edfef0;harness-attribute-extra-pip: org.jenkinsci.plugins.workflow.actions.TimingAction@5366eb2e:org.jenkinsci.plugins.workflow.actions.TimingAction@5366eb2e;harness-attribute-extra-pip: org.jenkinsci.plugins.workflow.support.actions.LogStorageAction@4ee6cdd0:org.jenkinsci.plugins.workflow.support.actions.LogStorageAction@4ee6cdd0;harness-others:;jenkins.pipeline.step.id:3;jenkins.pipeline.step.name:agent.allocate;jenkins.pipeline.step.plugin.name:workflow-durable-task-step;jenkins.pipeline.step.plugin.version:1353.v1891a_b_01da_18;jenkins.pipeline.step.type:node;)",
+          "name": "op-jacoco #1",
+          "attributesMap": {
+            "harness-attribute-extra-pip: com.cloudbees.workflow.rest.endpoints.FlowNodeAPI@3ce82e80": "com.cloudbees.workflow.rest.endpoints.FlowNodeAPI@3ce82e80",
+            "harness-attribute-extra-pip: FlowNodeMonitoringAction{traceId='12b7b0c051b529b5aeffaa0b2c269b8a', spanId='72e066255368f652', span.name='Agent'}": "FlowNodeMonitoringAction{traceId='12b7b0c051b529b5aeffaa0b2c269b8a', spanId='72e066255368f652', span.name='Agent'}",
+            "harness-others": "",
+            "jenkins.pipeline.step.name": "agent.allocate",
+            "jenkins.pipeline.step.id": "3",
+            "jenkins.pipeline.step.type": "node",
+            "harness-attribute-extra-pip: io.jenkins.plugins.opentelemetry.MigrateHarnessUrlChildAction@48edfef0": "io.jenkins.plugins.opentelemetry.MigrateHarnessUrlChildAction@48edfef0",
+            "harness-attribute-extra-pip: org.jenkinsci.plugins.workflow.actions.TimingAction@5366eb2e": "org.jenkinsci.plugins.workflow.actions.TimingAction@5366eb2e",
+            "jenkins.pipeline.step.plugin.name": "workflow-durable-task-step",
+            "jenkins.pipeline.step.plugin.version": "1353.v1891a_b_01da_18",
+            "harness-attribute-extra-pip: org.jenkinsci.plugins.workflow.support.actions.LogStorageAction@4ee6cdd0": "org.jenkinsci.plugins.workflow.support.actions.LogStorageAction@4ee6cdd0"
+          },
+          "type": "Run Phase Span",
+          "parentSpanId": "6ed7401d8a5e01ea",
+          "spanName": "Agent Allocation"
+        },
+        {
+          "spanId": "72e066255368f652",
+          "traceId": "12b7b0c051b529b5aeffaa0b2c269b8a",
+          "parent": "op-jacoco",
+          "all-info": "span(name: Agent, spanId: 72e066255368f652, parentSpanId: 6ed7401d8a5e01ea, traceId: 12b7b0c051b529b5aeffaa0b2c269b8a, attr: harness-attribute-extra-pip: com.cloudbees.workflow.rest.endpoints.FlowNodeAPI@4fd9e318:com.cloudbees.workflow.rest.endpoints.FlowNodeAPI@4fd9e318;harness-attribute-extra-pip: io.jenkins.plugins.opentelemetry.MigrateHarnessUrlChildAction@224cb5d2:io.jenkins.plugins.opentelemetry.MigrateHarnessUrlChildAction@224cb5d2;harness-attribute-extra-pip: org.jenkinsci.plugins.workflow.actions.TimingAction@5366eb2e:org.jenkinsci.plugins.workflow.actions.TimingAction@5366eb2e;harness-attribute-extra-pip: org.jenkinsci.plugins.workflow.support.actions.LogStorageAction@4ee6cdd0:org.jenkinsci.plugins.workflow.support.actions.LogStorageAction@4ee6cdd0;harness-others:;jenkins.credentials.id:[org.jenkinsci.plugins.workflow.support.actions.LogStorageAction@4ee6cdd0, org.jenkinsci.plugins.workflow.actions.TimingAction@5366eb2e, com.cloudbees.workflow.rest.endpoints.FlowNodeAPI@91bbe1b, io.jenkins.plugins.opentelemetry.MigrateHarnessUrlChildAction@1331433b];jenkins.pipeline.step.id:3;jenkins.pipeline.step.name:agent;jenkins.pipeline.step.plugin.name:workflow-durable-task-step;jenkins.pipeline.step.plugin.version:1353.v1891a_b_01da_18;jenkins.pipeline.step.type:node;)",
+          "children": [
+            {
+              "spanId": "b9a60f5295e30e85",
+              "traceId": "12b7b0c051b529b5aeffaa0b2c269b8a",
+              "parent": "op-jacoco",
+              "all-info": "span(name: Stage: null, spanId: b9a60f5295e30e85, parentSpanId: 72e066255368f652, traceId: 12b7b0c051b529b5aeffaa0b2c269b8a, attr: harness-attribute-extra-pip: com.cloudbees.workflow.rest.endpoints.FlowNodeAPI@66966c7:com.cloudbees.workflow.rest.endpoints.FlowNodeAPI@66966c7;harness-attribute-extra-pip: io.jenkins.plugins.opentelemetry.MigrateHarnessUrlChildAction@4a203c82:io.jenkins.plugins.opentelemetry.MigrateHarnessUrlChildAction@4a203c82;harness-attribute-extra-pip: org.jenkinsci.plugins.workflow.actions.BodyInvocationAction@6aadf90c:org.jenkinsci.plugins.workflow.actions.BodyInvocationAction@6aadf90c;harness-attribute-extra-pip: org.jenkinsci.plugins.workflow.actions.TimingAction@631c02ce:org.jenkinsci.plugins.workflow.actions.TimingAction@631c02ce;harness-others:;jenkins.pipeline.step.type:node;)",
+              "name": "op-jacoco #1",
+              "attributesMap": {
+                "harness-attribute-extra-pip: com.cloudbees.workflow.rest.endpoints.FlowNodeAPI@66966c7": "com.cloudbees.workflow.rest.endpoints.FlowNodeAPI@66966c7",
+                "harness-attribute-extra-pip: org.jenkinsci.plugins.workflow.actions.TimingAction@631c02ce": "org.jenkinsci.plugins.workflow.actions.TimingAction@631c02ce",
+                "harness-others": "",
+                "harness-attribute-extra-pip: io.jenkins.plugins.opentelemetry.MigrateHarnessUrlChildAction@4a203c82": "io.jenkins.plugins.opentelemetry.MigrateHarnessUrlChildAction@4a203c82",
+                "harness-attribute-extra-pip: org.jenkinsci.plugins.workflow.actions.BodyInvocationAction@6aadf90c": "org.jenkinsci.plugins.workflow.actions.BodyInvocationAction@6aadf90c",
+                "jenkins.pipeline.step.type": "node"
+              },
+              "type": "Run Phase Span",
+              "parentSpanId": "72e066255368f652",
+              "spanName": "Stage: null"
+            },
+            {
+              "spanId": "3b3910471a63b426",
+              "traceId": "12b7b0c051b529b5aeffaa0b2c269b8a",
+              "parent": "op-jacoco",
+              "all-info": "span(name: Stage: null, spanId: 3b3910471a63b426, parentSpanId: 72e066255368f652, traceId: 12b7b0c051b529b5aeffaa0b2c269b8a, attr: harness-attribute:{\n  \"overrides\" : [ \"BRANCH=master\", \"GITHUB_REPO=https://github.com/syamv/gameoflife.git\" ]\n};harness-attribute-extra-pip: com.cloudbees.workflow.rest.endpoints.FlowNodeAPI@2bcdf4bd:com.cloudbees.workflow.rest.endpoints.FlowNodeAPI@2bcdf4bd;harness-attribute-extra-pip: io.jenkins.plugins.opentelemetry.MigrateHarnessUrlChildAction@6e2571c0:io.jenkins.plugins.opentelemetry.MigrateHarnessUrlChildAction@6e2571c0;harness-attribute-extra-pip: org.jenkinsci.plugins.workflow.actions.TimingAction@6163f064:org.jenkinsci.plugins.workflow.actions.TimingAction@6163f064;harness-attribute-extra-pip: org.jenkinsci.plugins.workflow.support.actions.LogStorageAction@926406:org.jenkinsci.plugins.workflow.support.actions.LogStorageAction@926406;harness-others:;jenkins.pipeline.step.type:withEnv;)",
+              "children": [
+                {
+                  "spanId": "00082bbf16831792",
+                  "traceId": "12b7b0c051b529b5aeffaa0b2c269b8a",
+                  "parent": "op-jacoco",
+                  "all-info": "span(name: Stage: null, spanId: 00082bbf16831792, parentSpanId: 3b3910471a63b426, traceId: 12b7b0c051b529b5aeffaa0b2c269b8a, attr: harness-attribute-extra-pip: com.cloudbees.workflow.rest.endpoints.FlowNodeAPI@24cff0d4:com.cloudbees.workflow.rest.endpoints.FlowNodeAPI@24cff0d4;harness-attribute-extra-pip: io.jenkins.plugins.opentelemetry.MigrateHarnessUrlChildAction@3955d601:io.jenkins.plugins.opentelemetry.MigrateHarnessUrlChildAction@3955d601;harness-attribute-extra-pip: org.jenkinsci.plugins.workflow.actions.BodyInvocationAction@19299476:org.jenkinsci.plugins.workflow.actions.BodyInvocationAction@19299476;harness-attribute-extra-pip: org.jenkinsci.plugins.workflow.actions.TimingAction@72ca395b:org.jenkinsci.plugins.workflow.actions.TimingAction@72ca395b;harness-others:;jenkins.pipeline.step.type:withEnv;)",
+                  "children": [
+                    {
+                      "spanId": "ceb12ebc989addae",
+                      "traceId": "12b7b0c051b529b5aeffaa0b2c269b8a",
+                      "parent": "op-jacoco",
+                      "all-info": "span(name: Stage: null, spanId: ceb12ebc989addae, parentSpanId: 00082bbf16831792, traceId: 12b7b0c051b529b5aeffaa0b2c269b8a, attr: harness-attribute:{\n  \"name\" : \"Checkout Code\"\n};harness-attribute-extra-pip: com.cloudbees.workflow.rest.endpoints.FlowNodeAPI@6c603488:com.cloudbees.workflow.rest.endpoints.FlowNodeAPI@6c603488;harness-attribute-extra-pip: io.jenkins.plugins.opentelemetry.MigrateHarnessUrlChildAction@79c06ff6:io.jenkins.plugins.opentelemetry.MigrateHarnessUrlChildAction@79c06ff6;harness-attribute-extra-pip: org.jenkinsci.plugins.workflow.actions.TimingAction@416a8c30:org.jenkinsci.plugins.workflow.actions.TimingAction@416a8c30;harness-attribute-extra-pip: org.jenkinsci.plugins.workflow.support.actions.LogStorageAction@528acc88:org.jenkinsci.plugins.workflow.support.actions.LogStorageAction@528acc88;harness-others:-name-field org.jenkinsci.plugins.workflow.support.steps.StageStep name-org.jenkinsci.plugins.workflow.support.steps.StageStep.name-class java.lang.String-concurrency-field org.jenkinsci.plugins.workflow.support.steps.StageStep concurrency-org.jenkinsci.plugins.workflow.support.steps.StageStep.concurrency-class java.lang.Integer;jenkins.pipeline.step.type:stage;)",
+                      "children": [
+                        {
+                          "spanId": "161942d3dc65a405",
+                          "traceId": "12b7b0c051b529b5aeffaa0b2c269b8a",
+                          "parent": "op-jacoco",
+                          "all-info": "span(name: Stage: null, spanId: 161942d3dc65a405, parentSpanId: ceb12ebc989addae, traceId: 12b7b0c051b529b5aeffaa0b2c269b8a, attr: harness-attribute-extra-pip: com.cloudbees.workflow.rest.endpoints.FlowNodeAPI@7f808f4f:com.cloudbees.workflow.rest.endpoints.FlowNodeAPI@7f808f4f;harness-attribute-extra-pip: io.jenkins.plugins.opentelemetry.MigrateHarnessUrlChildAction@5032d774:io.jenkins.plugins.opentelemetry.MigrateHarnessUrlChildAction@5032d774;harness-attribute-extra-pip: org.jenkinsci.plugins.workflow.actions.TimingAction@372ec2a:org.jenkinsci.plugins.workflow.actions.TimingAction@372ec2a;harness-others:-name-field org.jenkinsci.plugins.workflow.support.steps.StageStep name-org.jenkinsci.plugins.workflow.support.steps.StageStep.name-class java.lang.String-concurrency-field org.jenkinsci.plugins.workflow.support.steps.StageStep concurrency-org.jenkinsci.plugins.workflow.support.steps.StageStep.concurrency-class java.lang.Integer;jenkins.pipeline.step.type:stage;)",
+                          "name": "op-jacoco #1",
+                          "attributesMap": {
+                            "harness-others": "-name-field org.jenkinsci.plugins.workflow.support.steps.StageStep name-org.jenkinsci.plugins.workflow.support.steps.StageStep.name-class java.lang.String-concurrency-field org.jenkinsci.plugins.workflow.support.steps.StageStep concurrency-org.jenkinsci.plugins.workflow.support.steps.StageStep.concurrency-class java.lang.Integer",
+                            "jenkins.pipeline.step.type": "stage",
+                            "harness-attribute-extra-pip: com.cloudbees.workflow.rest.endpoints.FlowNodeAPI@7f808f4f": "com.cloudbees.workflow.rest.endpoints.FlowNodeAPI@7f808f4f",
+                            "harness-attribute-extra-pip: io.jenkins.plugins.opentelemetry.MigrateHarnessUrlChildAction@5032d774": "io.jenkins.plugins.opentelemetry.MigrateHarnessUrlChildAction@5032d774",
+                            "harness-attribute-extra-pip: org.jenkinsci.plugins.workflow.actions.TimingAction@372ec2a": "org.jenkinsci.plugins.workflow.actions.TimingAction@372ec2a"
+                          },
+                          "type": "Run Phase Span",
+                          "parentSpanId": "ceb12ebc989addae",
+                          "spanName": "Stage: null"
+                        },
+                        {
+                          "spanId": "e9819202dacabdcf",
+                          "traceId": "12b7b0c051b529b5aeffaa0b2c269b8a",
+                          "parent": "op-jacoco",
+                          "all-info": "span(name: Stage: Checkout Code, spanId: e9819202dacabdcf, parentSpanId: ceb12ebc989addae, traceId: 12b7b0c051b529b5aeffaa0b2c269b8a, attr: harness-attribute-extra-pip: com.cloudbees.workflow.rest.endpoints.FlowNodeAPI@7c5fece4:com.cloudbees.workflow.rest.endpoints.FlowNodeAPI@7c5fece4;harness-attribute-extra-pip: io.jenkins.plugins.opentelemetry.MigrateHarnessUrlChildAction@fe228ec:io.jenkins.plugins.opentelemetry.MigrateHarnessUrlChildAction@fe228ec;harness-attribute-extra-pip: org.jenkinsci.plugins.workflow.actions.BodyInvocationAction@3d695550:org.jenkinsci.plugins.workflow.actions.BodyInvocationAction@3d695550;harness-attribute-extra-pip: org.jenkinsci.plugins.workflow.actions.LabelAction@46e6b506:org.jenkinsci.plugins.workflow.actions.LabelAction@46e6b506;harness-attribute-extra-pip: org.jenkinsci.plugins.workflow.actions.TimingAction@2754ce1b:org.jenkinsci.plugins.workflow.actions.TimingAction@2754ce1b;harness-others:-name-field org.jenkinsci.plugins.workflow.support.steps.StageStep name-org.jenkinsci.plugins.workflow.support.steps.StageStep.name-class java.lang.String-concurrency-field org.jenkinsci.plugins.workflow.support.steps.StageStep concurrency-org.jenkinsci.plugins.workflow.support.steps.StageStep.concurrency-class java.lang.Integer;jenkins.pipeline.step.id:8;jenkins.pipeline.step.name:Checkout Code;jenkins.pipeline.step.plugin.name:pipeline-stage-step;jenkins.pipeline.step.plugin.version:312.v8cd10304c27a_;jenkins.pipeline.step.type:stage;)",
+                          "children": [
+                            {
+                              "spanId": "1a240a17a478a9cd",
+                              "traceId": "12b7b0c051b529b5aeffaa0b2c269b8a",
+                              "parent": "op-jacoco",
+                              "all-info": "span(name: git: github.com/syamv/gameoflife, spanId: 1a240a17a478a9cd, parentSpanId: e9819202dacabdcf, traceId: 12b7b0c051b529b5aeffaa0b2c269b8a, attr: ci.pipeline.run.user:SYSTEM;git.branch:master;git.repository:syamv/gameoflife;harness-attribute:{\n  \"branch\" : \"master\",\n  \"url\" : \"https://github.com/syamv/gameoflife.git\"\n};harness-attribute-extra-pip: com.cloudbees.workflow.rest.endpoints.FlowNodeAPI@1fcddaf8:com.cloudbees.workflow.rest.endpoints.FlowNodeAPI@1fcddaf8;harness-attribute-extra-pip: io.jenkins.plugins.opentelemetry.MigrateHarnessUrlChildAction@2620aec:io.jenkins.plugins.opentelemetry.MigrateHarnessUrlChildAction@2620aec;harness-attribute-extra-pip: org.jenkinsci.plugins.workflow.actions.TimingAction@6dbe018c:org.jenkinsci.plugins.workflow.actions.TimingAction@6dbe018c;harness-others:;http.method:POST;http.url:https://github.com/syamv/gameoflife.git;jenkins.pipeline.step.id:9;jenkins.pipeline.step.name:Git;jenkins.pipeline.step.plugin.name:git;jenkins.pipeline.step.plugin.version:5.2.2;jenkins.pipeline.step.type:git;net.peer.name:github.com;peer.service:github.com;rpc.method:checkout;rpc.service:git;rpc.system:https;)",
+                              "name": "op-jacoco #1",
+                              "attributesMap": {
+                                "harness-attribute-extra-pip: io.jenkins.plugins.opentelemetry.MigrateHarnessUrlChildAction@2620aec": "io.jenkins.plugins.opentelemetry.MigrateHarnessUrlChildAction@2620aec",
+                                "jenkins.pipeline.step.name": "Git",
+                                "rpc.service": "git",
+                                "ci.pipeline.run.user": "SYSTEM",
+                                "jenkins.pipeline.step.id": "9",
+                                "http.url": "https://github.com/syamv/gameoflife.git",
+                                "git.branch": "master",
+                                "harness-attribute": "{\n  \"branch\" : \"master\",\n  \"url\" : \"https://github.com/syamv/gameoflife.git\"\n}",
+                                "rpc.system": "https",
+                                "harness-attribute-extra-pip: org.jenkinsci.plugins.workflow.actions.TimingAction@6dbe018c": "org.jenkinsci.plugins.workflow.actions.TimingAction@6dbe018c",
+                                "git.repository": "syamv/gameoflife",
+                                "net.peer.name": "github.com",
+                                "harness-attribute-extra-pip: com.cloudbees.workflow.rest.endpoints.FlowNodeAPI@1fcddaf8": "com.cloudbees.workflow.rest.endpoints.FlowNodeAPI@1fcddaf8",
+                                "harness-others": "",
+                                "peer.service": "github.com",
+                                "jenkins.pipeline.step.type": "git",
+                                "rpc.method": "checkout",
+                                "jenkins.pipeline.step.plugin.name": "git",
+                                "http.method": "POST",
+                                "jenkins.pipeline.step.plugin.version": "5.2.2"
+                              },
+                              "type": "Run Phase Span",
+                              "parentSpanId": "e9819202dacabdcf",
+                              "parameterMap": {
+                                "branch": "master",
+                                "url": "https://github.com/syamv/gameoflife.git"
+                              },
+                              "spanName": "git: github.com/syamv/gameoflife"
+                            },
+                            {
+                              "spanId": "a8122a3940bec98f",
+                              "traceId": "12b7b0c051b529b5aeffaa0b2c269b8a",
+                              "parent": "op-jacoco",
+                              "all-info": "span(name: Stage: null, spanId: a8122a3940bec98f, parentSpanId: e9819202dacabdcf, traceId: 12b7b0c051b529b5aeffaa0b2c269b8a, attr: harness-attribute-extra-pip: com.cloudbees.workflow.rest.endpoints.FlowNodeAPI@4fe2f120:com.cloudbees.workflow.rest.endpoints.FlowNodeAPI@4fe2f120;harness-attribute-extra-pip: io.jenkins.plugins.opentelemetry.MigrateHarnessUrlChildAction@73bc29e8:io.jenkins.plugins.opentelemetry.MigrateHarnessUrlChildAction@73bc29e8;harness-attribute-extra-pip: org.jenkinsci.plugins.workflow.actions.BodyInvocationAction@1ac68a8a:org.jenkinsci.plugins.workflow.actions.BodyInvocationAction@1ac68a8a;harness-attribute-extra-pip: org.jenkinsci.plugins.workflow.actions.TimingAction@2d4640a9:org.jenkinsci.plugins.workflow.actions.TimingAction@2d4640a9;harness-others:-name-field org.jenkinsci.plugins.workflow.support.steps.StageStep name-org.jenkinsci.plugins.workflow.support.steps.StageStep.name-class java.lang.String-concurrency-field org.jenkinsci.plugins.workflow.support.steps.StageStep concurrency-org.jenkinsci.plugins.workflow.support.steps.StageStep.concurrency-class java.lang.Integer;jenkins.pipeline.step.type:stage;)",
+                              "name": "op-jacoco #1",
+                              "attributesMap": {
+                                "harness-attribute-extra-pip: io.jenkins.plugins.opentelemetry.MigrateHarnessUrlChildAction@73bc29e8": "io.jenkins.plugins.opentelemetry.MigrateHarnessUrlChildAction@73bc29e8",
+                                "harness-others": "-name-field org.jenkinsci.plugins.workflow.support.steps.StageStep name-org.jenkinsci.plugins.workflow.support.steps.StageStep.name-class java.lang.String-concurrency-field org.jenkinsci.plugins.workflow.support.steps.StageStep concurrency-org.jenkinsci.plugins.workflow.support.steps.StageStep.concurrency-class java.lang.Integer",
+                                "jenkins.pipeline.step.type": "stage",
+                                "harness-attribute-extra-pip: org.jenkinsci.plugins.workflow.actions.TimingAction@2d4640a9": "org.jenkinsci.plugins.workflow.actions.TimingAction@2d4640a9",
+                                "harness-attribute-extra-pip: com.cloudbees.workflow.rest.endpoints.FlowNodeAPI@4fe2f120": "com.cloudbees.workflow.rest.endpoints.FlowNodeAPI@4fe2f120",
+                                "harness-attribute-extra-pip: org.jenkinsci.plugins.workflow.actions.BodyInvocationAction@1ac68a8a": "org.jenkinsci.plugins.workflow.actions.BodyInvocationAction@1ac68a8a"
+                              },
+                              "type": "Run Phase Span",
+                              "parentSpanId": "e9819202dacabdcf",
+                              "spanName": "Stage: null"
+                            }
+                          ],
+                          "name": "op-jacoco #1",
+                          "attributesMap": {
+                            "harness-attribute-extra-pip: org.jenkinsci.plugins.workflow.actions.LabelAction@46e6b506": "org.jenkinsci.plugins.workflow.actions.LabelAction@46e6b506",
+                            "harness-attribute-extra-pip: com.cloudbees.workflow.rest.endpoints.FlowNodeAPI@7c5fece4": "com.cloudbees.workflow.rest.endpoints.FlowNodeAPI@7c5fece4",
+                            "harness-attribute-extra-pip: io.jenkins.plugins.opentelemetry.MigrateHarnessUrlChildAction@fe228ec": "io.jenkins.plugins.opentelemetry.MigrateHarnessUrlChildAction@fe228ec",
+                            "harness-others": "-name-field org.jenkinsci.plugins.workflow.support.steps.StageStep name-org.jenkinsci.plugins.workflow.support.steps.StageStep.name-class java.lang.String-concurrency-field org.jenkinsci.plugins.workflow.support.steps.StageStep concurrency-org.jenkinsci.plugins.workflow.support.steps.StageStep.concurrency-class java.lang.Integer",
+                            "jenkins.pipeline.step.name": "Checkout Code",
+                            "jenkins.pipeline.step.id": "8",
+                            "harness-attribute-extra-pip: org.jenkinsci.plugins.workflow.actions.TimingAction@2754ce1b": "org.jenkinsci.plugins.workflow.actions.TimingAction@2754ce1b",
+                            "jenkins.pipeline.step.type": "stage",
+                            "harness-attribute-extra-pip: org.jenkinsci.plugins.workflow.actions.BodyInvocationAction@3d695550": "org.jenkinsci.plugins.workflow.actions.BodyInvocationAction@3d695550",
+                            "jenkins.pipeline.step.plugin.name": "pipeline-stage-step",
+                            "jenkins.pipeline.step.plugin.version": "312.v8cd10304c27a_"
+                          },
+                          "type": "Run Phase Span",
+                          "parentSpanId": "ceb12ebc989addae",
+                          "spanName": "Stage: Checkout Code"
+                        }
+                      ],
+                      "name": "op-jacoco #1",
+                      "attributesMap": {
+                        "harness-attribute-extra-pip: org.jenkinsci.plugins.workflow.actions.TimingAction@416a8c30": "org.jenkinsci.plugins.workflow.actions.TimingAction@416a8c30",
+                        "harness-attribute-extra-pip: org.jenkinsci.plugins.workflow.support.actions.LogStorageAction@528acc88": "org.jenkinsci.plugins.workflow.support.actions.LogStorageAction@528acc88",
+                        "harness-attribute-extra-pip: io.jenkins.plugins.opentelemetry.MigrateHarnessUrlChildAction@79c06ff6": "io.jenkins.plugins.opentelemetry.MigrateHarnessUrlChildAction@79c06ff6",
+                        "harness-attribute-extra-pip: com.cloudbees.workflow.rest.endpoints.FlowNodeAPI@6c603488": "com.cloudbees.workflow.rest.endpoints.FlowNodeAPI@6c603488",
+                        "harness-others": "-name-field org.jenkinsci.plugins.workflow.support.steps.StageStep name-org.jenkinsci.plugins.workflow.support.steps.StageStep.name-class java.lang.String-concurrency-field org.jenkinsci.plugins.workflow.support.steps.StageStep concurrency-org.jenkinsci.plugins.workflow.support.steps.StageStep.concurrency-class java.lang.Integer",
+                        "jenkins.pipeline.step.type": "stage",
+                        "harness-attribute": "{\n  \"name\" : \"Checkout Code\"\n}"
+                      },
+                      "type": "Run Phase Span",
+                      "parentSpanId": "00082bbf16831792",
+                      "parameterMap": {"name": "Checkout Code"},
+                      "spanName": "Stage: null"
+                    },
+                    {
+                      "spanId": "9a908039a489ca57",
+                      "traceId": "12b7b0c051b529b5aeffaa0b2c269b8a",
+                      "parent": "op-jacoco",
+                      "all-info": "span(name: Stage: null, spanId: 9a908039a489ca57, parentSpanId: 00082bbf16831792, traceId: 12b7b0c051b529b5aeffaa0b2c269b8a, attr: harness-attribute-extra-pip: com.cloudbees.workflow.rest.endpoints.FlowNodeAPI@5f2c1213:com.cloudbees.workflow.rest.endpoints.FlowNodeAPI@5f2c1213;harness-attribute-extra-pip: io.jenkins.plugins.opentelemetry.MigrateHarnessUrlChildAction@46dc51f2:io.jenkins.plugins.opentelemetry.MigrateHarnessUrlChildAction@46dc51f2;harness-attribute-extra-pip: org.jenkinsci.plugins.workflow.actions.BodyInvocationAction@52e60808:org.jenkinsci.plugins.workflow.actions.BodyInvocationAction@52e60808;harness-attribute-extra-pip: org.jenkinsci.plugins.workflow.actions.TimingAction@4439493a:org.jenkinsci.plugins.workflow.actions.TimingAction@4439493a;harness-others:;jenkins.pipeline.step.type:withEnv;)",
+                      "name": "op-jacoco #1",
+                      "attributesMap": {
+                        "harness-others": "",
+                        "jenkins.pipeline.step.type": "withEnv",
+                        "harness-attribute-extra-pip: com.cloudbees.workflow.rest.endpoints.FlowNodeAPI@5f2c1213": "com.cloudbees.workflow.rest.endpoints.FlowNodeAPI@5f2c1213",
+                        "harness-attribute-extra-pip: io.jenkins.plugins.opentelemetry.MigrateHarnessUrlChildAction@46dc51f2": "io.jenkins.plugins.opentelemetry.MigrateHarnessUrlChildAction@46dc51f2",
+                        "harness-attribute-extra-pip: org.jenkinsci.plugins.workflow.actions.BodyInvocationAction@52e60808": "org.jenkinsci.plugins.workflow.actions.BodyInvocationAction@52e60808",
+                        "harness-attribute-extra-pip: org.jenkinsci.plugins.workflow.actions.TimingAction@4439493a": "org.jenkinsci.plugins.workflow.actions.TimingAction@4439493a"
+                      },
+                      "type": "Run Phase Span",
+                      "parentSpanId": "00082bbf16831792",
+                      "spanName": "Stage: null"
+                    },
+                    {
+                      "spanId": "1d6bb28d33ea1efb",
+                      "traceId": "12b7b0c051b529b5aeffaa0b2c269b8a",
+                      "parent": "op-jacoco",
+                      "all-info": "span(name: Stage: null, spanId: 1d6bb28d33ea1efb, parentSpanId: 00082bbf16831792, traceId: 12b7b0c051b529b5aeffaa0b2c269b8a, attr: harness-attribute:{\n  \"name\" : \"Publish JaCoCo Coverage Report\"\n};harness-attribute-extra-pip: com.cloudbees.workflow.rest.endpoints.FlowNodeAPI@2099c660:com.cloudbees.workflow.rest.endpoints.FlowNodeAPI@2099c660;harness-attribute-extra-pip: io.jenkins.plugins.opentelemetry.MigrateHarnessUrlChildAction@174a8f92:io.jenkins.plugins.opentelemetry.MigrateHarnessUrlChildAction@174a8f92;harness-attribute-extra-pip: org.jenkinsci.plugins.workflow.actions.TimingAction@244a434b:org.jenkinsci.plugins.workflow.actions.TimingAction@244a434b;harness-attribute-extra-pip: org.jenkinsci.plugins.workflow.support.actions.LogStorageAction@4f4045da:org.jenkinsci.plugins.workflow.support.actions.LogStorageAction@4f4045da;harness-others:-name-field org.jenkinsci.plugins.workflow.support.steps.StageStep name-org.jenkinsci.plugins.workflow.support.steps.StageStep.name-class java.lang.String-concurrency-field org.jenkinsci.plugins.workflow.support.steps.StageStep concurrency-org.jenkinsci.plugins.workflow.support.steps.StageStep.concurrency-class java.lang.Integer;jenkins.pipeline.step.type:stage;)",
+                      "children": [
+                        {
+                          "spanId": "9a2d3dbdbd728ef0",
+                          "traceId": "12b7b0c051b529b5aeffaa0b2c269b8a",
+                          "parent": "op-jacoco",
+                          "all-info": "span(name: Stage: null, spanId: 9a2d3dbdbd728ef0, parentSpanId: 1d6bb28d33ea1efb, traceId: 12b7b0c051b529b5aeffaa0b2c269b8a, attr: harness-attribute-extra-pip: com.cloudbees.workflow.rest.endpoints.FlowNodeAPI@2332f6d1:com.cloudbees.workflow.rest.endpoints.FlowNodeAPI@2332f6d1;harness-attribute-extra-pip: io.jenkins.plugins.opentelemetry.MigrateHarnessUrlChildAction@2dde2a8c:io.jenkins.plugins.opentelemetry.MigrateHarnessUrlChildAction@2dde2a8c;harness-attribute-extra-pip: org.jenkinsci.plugins.workflow.actions.TimingAction@33924689:org.jenkinsci.plugins.workflow.actions.TimingAction@33924689;harness-others:-name-field org.jenkinsci.plugins.workflow.support.steps.StageStep name-org.jenkinsci.plugins.workflow.support.steps.StageStep.name-class java.lang.String-concurrency-field org.jenkinsci.plugins.workflow.support.steps.StageStep concurrency-org.jenkinsci.plugins.workflow.support.steps.StageStep.concurrency-class java.lang.Integer;jenkins.pipeline.step.type:stage;)",
+                          "name": "op-jacoco #1",
+                          "attributesMap": {
+                            "harness-others": "-name-field org.jenkinsci.plugins.workflow.support.steps.StageStep name-org.jenkinsci.plugins.workflow.support.steps.StageStep.name-class java.lang.String-concurrency-field org.jenkinsci.plugins.workflow.support.steps.StageStep concurrency-org.jenkinsci.plugins.workflow.support.steps.StageStep.concurrency-class java.lang.Integer",
+                            "harness-attribute-extra-pip: org.jenkinsci.plugins.workflow.actions.TimingAction@33924689": "org.jenkinsci.plugins.workflow.actions.TimingAction@33924689",
+                            "jenkins.pipeline.step.type": "stage",
+                            "harness-attribute-extra-pip: io.jenkins.plugins.opentelemetry.MigrateHarnessUrlChildAction@2dde2a8c": "io.jenkins.plugins.opentelemetry.MigrateHarnessUrlChildAction@2dde2a8c",
+                            "harness-attribute-extra-pip: com.cloudbees.workflow.rest.endpoints.FlowNodeAPI@2332f6d1": "com.cloudbees.workflow.rest.endpoints.FlowNodeAPI@2332f6d1"
+                          },
+                          "type": "Run Phase Span",
+                          "parentSpanId": "1d6bb28d33ea1efb",
+                          "spanName": "Stage: null"
+                        },
+                        {
+                          "spanId": "a12724c9da7e6760",
+                          "traceId": "12b7b0c051b529b5aeffaa0b2c269b8a",
+                          "parent": "op-jacoco",
+                          "all-info": "span(name: Stage: Publish JaCoCo Coverage Report, spanId: a12724c9da7e6760, parentSpanId: 1d6bb28d33ea1efb, traceId: 12b7b0c051b529b5aeffaa0b2c269b8a, attr: harness-attribute-extra-pip: com.cloudbees.workflow.rest.endpoints.FlowNodeAPI@42715d5e:com.cloudbees.workflow.rest.endpoints.FlowNodeAPI@42715d5e;harness-attribute-extra-pip: io.jenkins.plugins.opentelemetry.MigrateHarnessUrlChildAction@11e26b87:io.jenkins.plugins.opentelemetry.MigrateHarnessUrlChildAction@11e26b87;harness-attribute-extra-pip: org.jenkinsci.plugins.workflow.actions.BodyInvocationAction@77c71c28:org.jenkinsci.plugins.workflow.actions.BodyInvocationAction@77c71c28;harness-attribute-extra-pip: org.jenkinsci.plugins.workflow.actions.LabelAction@4e73b669:org.jenkinsci.plugins.workflow.actions.LabelAction@4e73b669;harness-attribute-extra-pip: org.jenkinsci.plugins.workflow.actions.TimingAction@7fb6199:org.jenkinsci.plugins.workflow.actions.TimingAction@7fb6199;harness-others:-name-field org.jenkinsci.plugins.workflow.support.steps.StageStep name-org.jenkinsci.plugins.workflow.support.steps.StageStep.name-class java.lang.String-concurrency-field org.jenkinsci.plugins.workflow.support.steps.StageStep concurrency-org.jenkinsci.plugins.workflow.support.steps.StageStep.concurrency-class java.lang.Integer;jenkins.pipeline.step.id:13;jenkins.pipeline.step.name:Publish JaCoCo Coverage Report;jenkins.pipeline.step.plugin.name:pipeline-stage-step;jenkins.pipeline.step.plugin.version:312.v8cd10304c27a_;jenkins.pipeline.step.type:stage;)",
+                          "children": [
+                            {
+                              "spanId": "27583b042540aee2",
+                              "traceId": "12b7b0c051b529b5aeffaa0b2c269b8a",
+                              "parent": "op-jacoco",
+                              "all-info": "span(name: Stage: null, spanId: 27583b042540aee2, parentSpanId: a12724c9da7e6760, traceId: 12b7b0c051b529b5aeffaa0b2c269b8a, attr: harness-attribute-extra-pip: com.cloudbees.workflow.rest.endpoints.FlowNodeAPI@41036d75:com.cloudbees.workflow.rest.endpoints.FlowNodeAPI@41036d75;harness-attribute-extra-pip: io.jenkins.plugins.opentelemetry.MigrateHarnessUrlChildAction@178fd2f4:io.jenkins.plugins.opentelemetry.MigrateHarnessUrlChildAction@178fd2f4;harness-attribute-extra-pip: org.jenkinsci.plugins.workflow.actions.BodyInvocationAction@3b6ddf35:org.jenkinsci.plugins.workflow.actions.BodyInvocationAction@3b6ddf35;harness-attribute-extra-pip: org.jenkinsci.plugins.workflow.actions.TimingAction@7a766fe8:org.jenkinsci.plugins.workflow.actions.TimingAction@7a766fe8;harness-others:-name-field org.jenkinsci.plugins.workflow.support.steps.StageStep name-org.jenkinsci.plugins.workflow.support.steps.StageStep.name-class java.lang.String-concurrency-field org.jenkinsci.plugins.workflow.support.steps.StageStep concurrency-org.jenkinsci.plugins.workflow.support.steps.StageStep.concurrency-class java.lang.Integer;jenkins.pipeline.step.type:stage;)",
+                              "name": "op-jacoco #1",
+                              "attributesMap": {
+                                "harness-attribute-extra-pip: org.jenkinsci.plugins.workflow.actions.BodyInvocationAction@3b6ddf35": "org.jenkinsci.plugins.workflow.actions.BodyInvocationAction@3b6ddf35",
+                                "harness-others": "-name-field org.jenkinsci.plugins.workflow.support.steps.StageStep name-org.jenkinsci.plugins.workflow.support.steps.StageStep.name-class java.lang.String-concurrency-field org.jenkinsci.plugins.workflow.support.steps.StageStep concurrency-org.jenkinsci.plugins.workflow.support.steps.StageStep.concurrency-class java.lang.Integer",
+                                "harness-attribute-extra-pip: io.jenkins.plugins.opentelemetry.MigrateHarnessUrlChildAction@178fd2f4": "io.jenkins.plugins.opentelemetry.MigrateHarnessUrlChildAction@178fd2f4",
+                                "jenkins.pipeline.step.type": "stage",
+                                "harness-attribute-extra-pip: org.jenkinsci.plugins.workflow.actions.TimingAction@7a766fe8": "org.jenkinsci.plugins.workflow.actions.TimingAction@7a766fe8",
+                                "harness-attribute-extra-pip: com.cloudbees.workflow.rest.endpoints.FlowNodeAPI@41036d75": "com.cloudbees.workflow.rest.endpoints.FlowNodeAPI@41036d75"
+                              },
+                              "type": "Run Phase Span",
+                              "parentSpanId": "a12724c9da7e6760",
+                              "spanName": "Stage: null"
+                            },
+                            {
+                              "spanId": "463391905eeab151",
+                              "traceId": "12b7b0c051b529b5aeffaa0b2c269b8a",
+                              "parent": "op-jacoco",
+                              "all-info": "span(name: jacoco, spanId: 463391905eeab151, parentSpanId: a12724c9da7e6760, traceId: 12b7b0c051b529b5aeffaa0b2c269b8a, attr: ci.pipeline.run.user:SYSTEM;harness-attribute:{\n  \"delegate\" : {\n    \"symbol\" : \"jacoco\",\n    \"klass\" : null,\n    \"arguments\" : {\n      \"changeBuildStatus\" : true,\n      \"classPattern\" : \"**/target/classes\",\n      \"exclusionPattern\" : \"**/test/**\",\n      \"execPattern\" : \"target/*.exec\",\n      \"minimumBranchCoverage\" : \"1\",\n      \"minimumClassCoverage\" : \"1\",\n      \"minimumComplexityCoverage\" : \"100\",\n      \"minimumInstructionCoverage\" : \"1\",\n      \"minimumLineCoverage\" : \"1\",\n      \"minimumMethodCoverage\" : \"1\",\n      \"sourcePattern\" : \"**/src/main/java\"\n    },\n    \"model\" : null\n  }\n};harness-attribute-extra-pip: com.cloudbees.workflow.rest.endpoints.FlowNodeAPI@174f82:com.cloudbees.workflow.rest.endpoints.FlowNodeAPI@174f82;harness-attribute-extra-pip: io.jenkins.plugins.opentelemetry.MigrateHarnessUrlChildAction@4acf6b8b:io.jenkins.plugins.opentelemetry.MigrateHarnessUrlChildAction@4acf6b8b;harness-attribute-extra-pip: org.jenkinsci.plugins.workflow.actions.TimingAction@62b12ccb:org.jenkinsci.plugins.workflow.actions.TimingAction@62b12ccb;harness-others:-delegate-field org.jenkinsci.plugins.workflow.steps.CoreStep delegate-org.jenkinsci.plugins.workflow.steps.CoreStep.delegate-interface jenkins.tasks.SimpleBuildStep;jenkins.pipeline.step.id:14;jenkins.pipeline.step.name:Record JaCoCo coverage report;jenkins.pipeline.step.plugin.name:jacoco;jenkins.pipeline.step.plugin.version:3.3.6;jenkins.pipeline.step.type:jacoco;)",
+                              "name": "op-jacoco #1",
+                              "attributesMap": {
+                                "harness-attribute-extra-pip: org.jenkinsci.plugins.workflow.actions.TimingAction@62b12ccb": "org.jenkinsci.plugins.workflow.actions.TimingAction@62b12ccb",
+                                "harness-others": "-delegate-field org.jenkinsci.plugins.workflow.steps.CoreStep delegate-org.jenkinsci.plugins.workflow.steps.CoreStep.delegate-interface jenkins.tasks.SimpleBuildStep",
+                                "jenkins.pipeline.step.name": "Record JaCoCo coverage report",
+                                "ci.pipeline.run.user": "SYSTEM",
+                                "jenkins.pipeline.step.id": "14",
+                                "jenkins.pipeline.step.type": "jacoco",
+                                "harness-attribute-extra-pip: com.cloudbees.workflow.rest.endpoints.FlowNodeAPI@174f82": "com.cloudbees.workflow.rest.endpoints.FlowNodeAPI@174f82",
+                                "harness-attribute": "{\n  \"delegate\" : {\n    \"symbol\" : \"jacoco\",\n    \"klass\" : null,\n    \"arguments\" : {\n      \"changeBuildStatus\" : true,\n      \"classPattern\" : \"**/target/classes\",\n      \"exclusionPattern\" : \"**/test/**\",\n      \"execPattern\" : \"target/*.exec\",\n      \"minimumBranchCoverage\" : \"1\",\n      \"minimumClassCoverage\" : \"1\",\n      \"minimumComplexityCoverage\" : \"100\",\n      \"minimumInstructionCoverage\" : \"1\",\n      \"minimumLineCoverage\" : \"1\",\n      \"minimumMethodCoverage\" : \"1\",\n      \"sourcePattern\" : \"**/src/main/java\"\n    },\n    \"model\" : null\n  }\n}",
+                                "jenkins.pipeline.step.plugin.name": "jacoco",
+                                "harness-attribute-extra-pip: io.jenkins.plugins.opentelemetry.MigrateHarnessUrlChildAction@4acf6b8b": "io.jenkins.plugins.opentelemetry.MigrateHarnessUrlChildAction@4acf6b8b",
+                                "jenkins.pipeline.step.plugin.version": "3.3.6"
+                              },
+                              "type": "Run Phase Span",
+                              "parentSpanId": "a12724c9da7e6760",
+                              "parameterMap": {"delegate": {
+                                "symbol": "jacoco",
+                                "klass": null,
+                                "arguments": {
+                                  "classPattern": "**/target/classes",
+                                  "minimumBranchCoverage": "1",
+                                  "execPattern": "target/*.exec",
+                                  "minimumClassCoverage": "1",
+                                  "changeBuildStatus": true,
+                                  "minimumLineCoverage": "1",
+                                  "minimumMethodCoverage": "1",
+                                  "minimumComplexityCoverage": "100",
+                                  "minimumInstructionCoverage": "1",
+                                  "sourcePattern": "**/src/main/java",
+                                  "exclusionPattern": "**/test/**"
+                                },
+                                "model": null
+                              }},
+                              "spanName": "jacoco"
+                            }
+                          ],
+                          "name": "op-jacoco #1",
+                          "attributesMap": {
+                            "harness-attribute-extra-pip: org.jenkinsci.plugins.workflow.actions.BodyInvocationAction@77c71c28": "org.jenkinsci.plugins.workflow.actions.BodyInvocationAction@77c71c28",
+                            "harness-others": "-name-field org.jenkinsci.plugins.workflow.support.steps.StageStep name-org.jenkinsci.plugins.workflow.support.steps.StageStep.name-class java.lang.String-concurrency-field org.jenkinsci.plugins.workflow.support.steps.StageStep concurrency-org.jenkinsci.plugins.workflow.support.steps.StageStep.concurrency-class java.lang.Integer",
+                            "jenkins.pipeline.step.name": "Publish JaCoCo Coverage Report",
+                            "jenkins.pipeline.step.id": "13",
+                            "jenkins.pipeline.step.type": "stage",
+                            "harness-attribute-extra-pip: com.cloudbees.workflow.rest.endpoints.FlowNodeAPI@42715d5e": "com.cloudbees.workflow.rest.endpoints.FlowNodeAPI@42715d5e",
+                            "jenkins.pipeline.step.plugin.name": "pipeline-stage-step",
+                            "harness-attribute-extra-pip: io.jenkins.plugins.opentelemetry.MigrateHarnessUrlChildAction@11e26b87": "io.jenkins.plugins.opentelemetry.MigrateHarnessUrlChildAction@11e26b87",
+                            "harness-attribute-extra-pip: org.jenkinsci.plugins.workflow.actions.LabelAction@4e73b669": "org.jenkinsci.plugins.workflow.actions.LabelAction@4e73b669",
+                            "harness-attribute-extra-pip: org.jenkinsci.plugins.workflow.actions.TimingAction@7fb6199": "org.jenkinsci.plugins.workflow.actions.TimingAction@7fb6199",
+                            "jenkins.pipeline.step.plugin.version": "312.v8cd10304c27a_"
+                          },
+                          "type": "Run Phase Span",
+                          "parentSpanId": "1d6bb28d33ea1efb",
+                          "spanName": "Stage: Publish JaCoCo Coverage Report"
+                        }
+                      ],
+                      "name": "op-jacoco #1",
+                      "attributesMap": {
+                        "harness-attribute-extra-pip: org.jenkinsci.plugins.workflow.support.actions.LogStorageAction@4f4045da": "org.jenkinsci.plugins.workflow.support.actions.LogStorageAction@4f4045da",
+                        "harness-others": "-name-field org.jenkinsci.plugins.workflow.support.steps.StageStep name-org.jenkinsci.plugins.workflow.support.steps.StageStep.name-class java.lang.String-concurrency-field org.jenkinsci.plugins.workflow.support.steps.StageStep concurrency-org.jenkinsci.plugins.workflow.support.steps.StageStep.concurrency-class java.lang.Integer",
+                        "harness-attribute-extra-pip: com.cloudbees.workflow.rest.endpoints.FlowNodeAPI@2099c660": "com.cloudbees.workflow.rest.endpoints.FlowNodeAPI@2099c660",
+                        "jenkins.pipeline.step.type": "stage",
+                        "harness-attribute-extra-pip: org.jenkinsci.plugins.workflow.actions.TimingAction@244a434b": "org.jenkinsci.plugins.workflow.actions.TimingAction@244a434b",
+                        "harness-attribute": "{\n  \"name\" : \"Publish JaCoCo Coverage Report\"\n}",
+                        "harness-attribute-extra-pip: io.jenkins.plugins.opentelemetry.MigrateHarnessUrlChildAction@174a8f92": "io.jenkins.plugins.opentelemetry.MigrateHarnessUrlChildAction@174a8f92"
+                      },
+                      "type": "Run Phase Span",
+                      "parentSpanId": "00082bbf16831792",
+                      "parameterMap": {"name": "Publish JaCoCo Coverage Report"},
+                      "spanName": "Stage: null"
+                    },
+                    {
+                      "spanId": "37c82fa97666fdab",
+                      "traceId": "12b7b0c051b529b5aeffaa0b2c269b8a",
+                      "parent": "op-jacoco",
+                      "all-info": "span(name: Stage: null, spanId: 37c82fa97666fdab, parentSpanId: 00082bbf16831792, traceId: 12b7b0c051b529b5aeffaa0b2c269b8a, attr: harness-attribute:{\n  \"name\" : \"Declarative: Post Actions\"\n};harness-attribute-extra-pip: com.cloudbees.workflow.rest.endpoints.FlowNodeAPI@275fe098:com.cloudbees.workflow.rest.endpoints.FlowNodeAPI@275fe098;harness-attribute-extra-pip: io.jenkins.plugins.opentelemetry.MigrateHarnessUrlChildAction@1805d951:io.jenkins.plugins.opentelemetry.MigrateHarnessUrlChildAction@1805d951;harness-attribute-extra-pip: org.jenkinsci.plugins.workflow.actions.TimingAction@62d7a71f:org.jenkinsci.plugins.workflow.actions.TimingAction@62d7a71f;harness-attribute-extra-pip: org.jenkinsci.plugins.workflow.support.actions.LogStorageAction@24e2215:org.jenkinsci.plugins.workflow.support.actions.LogStorageAction@24e2215;harness-others:-name-field org.jenkinsci.plugins.workflow.support.steps.StageStep name-org.jenkinsci.plugins.workflow.support.steps.StageStep.name-class java.lang.String-concurrency-field org.jenkinsci.plugins.workflow.support.steps.StageStep concurrency-org.jenkinsci.plugins.workflow.support.steps.StageStep.concurrency-class java.lang.Integer;jenkins.pipeline.step.type:stage;)",
+                      "children": [
+                        {
+                          "spanId": "daf9f665d6ae81f7",
+                          "traceId": "12b7b0c051b529b5aeffaa0b2c269b8a",
+                          "parent": "op-jacoco",
+                          "all-info": "span(name: Stage: Declarative: Post Actions, spanId: daf9f665d6ae81f7, parentSpanId: 37c82fa97666fdab, traceId: 12b7b0c051b529b5aeffaa0b2c269b8a, attr: harness-attribute-extra-pip: com.cloudbees.workflow.rest.endpoints.FlowNodeAPI@4961b363:com.cloudbees.workflow.rest.endpoints.FlowNodeAPI@4961b363;harness-attribute-extra-pip: io.jenkins.plugins.opentelemetry.MigrateHarnessUrlChildAction@28bf6ca8:io.jenkins.plugins.opentelemetry.MigrateHarnessUrlChildAction@28bf6ca8;harness-attribute-extra-pip: org.jenkinsci.plugins.workflow.actions.BodyInvocationAction@385f6b9a:org.jenkinsci.plugins.workflow.actions.BodyInvocationAction@385f6b9a;harness-attribute-extra-pip: org.jenkinsci.plugins.workflow.actions.LabelAction@7df3899e:org.jenkinsci.plugins.workflow.actions.LabelAction@7df3899e;harness-attribute-extra-pip: org.jenkinsci.plugins.workflow.actions.TimingAction@600bc878:org.jenkinsci.plugins.workflow.actions.TimingAction@600bc878;harness-others:-name-field org.jenkinsci.plugins.workflow.support.steps.StageStep name-org.jenkinsci.plugins.workflow.support.steps.StageStep.name-class java.lang.String-concurrency-field org.jenkinsci.plugins.workflow.support.steps.StageStep concurrency-org.jenkinsci.plugins.workflow.support.steps.StageStep.concurrency-class java.lang.Integer;jenkins.pipeline.step.id:18;jenkins.pipeline.step.name:Declarative: Post Actions;jenkins.pipeline.step.plugin.name:pipeline-stage-step;jenkins.pipeline.step.plugin.version:312.v8cd10304c27a_;jenkins.pipeline.step.type:stage;)",
+                          "children": [
+                            {
+                              "spanId": "9b766129acce7965",
+                              "traceId": "12b7b0c051b529b5aeffaa0b2c269b8a",
+                              "parent": "op-jacoco",
+                              "all-info": "span(name: archiveArtifacts, spanId: 9b766129acce7965, parentSpanId: daf9f665d6ae81f7, traceId: 12b7b0c051b529b5aeffaa0b2c269b8a, attr: ci.pipeline.run.user:SYSTEM;harness-attribute:{\n  \"delegate\" : {\n    \"symbol\" : \"archiveArtifacts\",\n    \"klass\" : null,\n    \"arguments\" : {\n      \"allowEmptyArchive\" : true,\n      \"artifacts\" : \"**/target/site/jacoco/*\"\n    },\n    \"model\" : null\n  }\n};harness-attribute-extra-pip: com.cloudbees.workflow.rest.endpoints.FlowNodeAPI@6e4bac80:com.cloudbees.workflow.rest.endpoints.FlowNodeAPI@6e4bac80;harness-attribute-extra-pip: io.jenkins.plugins.opentelemetry.MigrateHarnessUrlChildAction@4de5a221:io.jenkins.plugins.opentelemetry.MigrateHarnessUrlChildAction@4de5a221;harness-attribute-extra-pip: org.jenkinsci.plugins.workflow.actions.TimingAction@5269742a:org.jenkinsci.plugins.workflow.actions.TimingAction@5269742a;harness-others:-delegate-field org.jenkinsci.plugins.workflow.steps.CoreStep delegate-org.jenkinsci.plugins.workflow.steps.CoreStep.delegate-interface jenkins.tasks.SimpleBuildStep;jenkins.pipeline.step.id:19;jenkins.pipeline.step.name:Archive the artifacts;jenkins.pipeline.step.plugin.name:unknown;jenkins.pipeline.step.plugin.version:unknown;jenkins.pipeline.step.type:archiveArtifacts;)",
+                              "name": "op-jacoco #1",
+                              "attributesMap": {
+                                "harness-attribute-extra-pip: com.cloudbees.workflow.rest.endpoints.FlowNodeAPI@6e4bac80": "com.cloudbees.workflow.rest.endpoints.FlowNodeAPI@6e4bac80",
+                                "harness-others": "-delegate-field org.jenkinsci.plugins.workflow.steps.CoreStep delegate-org.jenkinsci.plugins.workflow.steps.CoreStep.delegate-interface jenkins.tasks.SimpleBuildStep",
+                                "jenkins.pipeline.step.name": "Archive the artifacts",
+                                "ci.pipeline.run.user": "SYSTEM",
+                                "jenkins.pipeline.step.id": "19",
+                                "harness-attribute-extra-pip: io.jenkins.plugins.opentelemetry.MigrateHarnessUrlChildAction@4de5a221": "io.jenkins.plugins.opentelemetry.MigrateHarnessUrlChildAction@4de5a221",
+                                "harness-attribute-extra-pip: org.jenkinsci.plugins.workflow.actions.TimingAction@5269742a": "org.jenkinsci.plugins.workflow.actions.TimingAction@5269742a",
+                                "jenkins.pipeline.step.type": "archiveArtifacts",
+                                "harness-attribute": "{\n  \"delegate\" : {\n    \"symbol\" : \"archiveArtifacts\",\n    \"klass\" : null,\n    \"arguments\" : {\n      \"allowEmptyArchive\" : true,\n      \"artifacts\" : \"**/target/site/jacoco/*\"\n    },\n    \"model\" : null\n  }\n}",
+                                "jenkins.pipeline.step.plugin.name": "unknown",
+                                "jenkins.pipeline.step.plugin.version": "unknown"
+                              },
+                              "type": "Run Phase Span",
+                              "parentSpanId": "daf9f665d6ae81f7",
+                              "parameterMap": {"delegate": {
+                                "symbol": "archiveArtifacts",
+                                "klass": null,
+                                "arguments": {
+                                  "allowEmptyArchive": true,
+                                  "artifacts": "**/target/site/jacoco/*"
+                                },
+                                "model": null
+                              }},
+                              "spanName": "archiveArtifacts"
+                            },
+                            {
+                              "spanId": "7c6ce20d41195caa",
+                              "traceId": "12b7b0c051b529b5aeffaa0b2c269b8a",
+                              "parent": "op-jacoco",
+                              "all-info": "span(name: Stage: null, spanId: 7c6ce20d41195caa, parentSpanId: daf9f665d6ae81f7, traceId: 12b7b0c051b529b5aeffaa0b2c269b8a, attr: harness-attribute-extra-pip: com.cloudbees.workflow.rest.endpoints.FlowNodeAPI@190dbcd6:com.cloudbees.workflow.rest.endpoints.FlowNodeAPI@190dbcd6;harness-attribute-extra-pip: io.jenkins.plugins.opentelemetry.MigrateHarnessUrlChildAction@5631db91:io.jenkins.plugins.opentelemetry.MigrateHarnessUrlChildAction@5631db91;harness-attribute-extra-pip: org.jenkinsci.plugins.workflow.actions.BodyInvocationAction@1d2a054b:org.jenkinsci.plugins.workflow.actions.BodyInvocationAction@1d2a054b;harness-attribute-extra-pip: org.jenkinsci.plugins.workflow.actions.TimingAction@4a6f3c29:org.jenkinsci.plugins.workflow.actions.TimingAction@4a6f3c29;harness-others:-name-field org.jenkinsci.plugins.workflow.support.steps.StageStep name-org.jenkinsci.plugins.workflow.support.steps.StageStep.name-class java.lang.String-concurrency-field org.jenkinsci.plugins.workflow.support.steps.StageStep concurrency-org.jenkinsci.plugins.workflow.support.steps.StageStep.concurrency-class java.lang.Integer;jenkins.pipeline.step.type:stage;)",
+                              "name": "op-jacoco #1",
+                              "attributesMap": {
+                                "harness-others": "-name-field org.jenkinsci.plugins.workflow.support.steps.StageStep name-org.jenkinsci.plugins.workflow.support.steps.StageStep.name-class java.lang.String-concurrency-field org.jenkinsci.plugins.workflow.support.steps.StageStep concurrency-org.jenkinsci.plugins.workflow.support.steps.StageStep.concurrency-class java.lang.Integer",
+                                "harness-attribute-extra-pip: io.jenkins.plugins.opentelemetry.MigrateHarnessUrlChildAction@5631db91": "io.jenkins.plugins.opentelemetry.MigrateHarnessUrlChildAction@5631db91",
+                                "jenkins.pipeline.step.type": "stage",
+                                "harness-attribute-extra-pip: com.cloudbees.workflow.rest.endpoints.FlowNodeAPI@190dbcd6": "com.cloudbees.workflow.rest.endpoints.FlowNodeAPI@190dbcd6",
+                                "harness-attribute-extra-pip: org.jenkinsci.plugins.workflow.actions.TimingAction@4a6f3c29": "org.jenkinsci.plugins.workflow.actions.TimingAction@4a6f3c29",
+                                "harness-attribute-extra-pip: org.jenkinsci.plugins.workflow.actions.BodyInvocationAction@1d2a054b": "org.jenkinsci.plugins.workflow.actions.BodyInvocationAction@1d2a054b"
+                              },
+                              "type": "Run Phase Span",
+                              "parentSpanId": "daf9f665d6ae81f7",
+                              "spanName": "Stage: null"
+                            },
+                            {
+                              "spanId": "5c66af17160277c7",
+                              "traceId": "12b7b0c051b529b5aeffaa0b2c269b8a",
+                              "parent": "op-jacoco",
+                              "all-info": "span(name: publishHTML, spanId: 5c66af17160277c7, parentSpanId: daf9f665d6ae81f7, traceId: 12b7b0c051b529b5aeffaa0b2c269b8a, attr: ci.pipeline.run.user:SYSTEM;harness-attribute:{\n  \"target\" : {\n    \"reportName\" : \"JaCoCo Coverage Report\",\n    \"reportDir\" : \"target/site/jacoco\",\n    \"reportFiles\" : \"index.html\",\n    \"keepAll\" : true,\n    \"alwaysLinkToLastBuild\" : true,\n    \"allowMissing\" : true\n  }\n};harness-attribute-extra-pip: com.cloudbees.workflow.rest.endpoints.FlowNodeAPI@40b1f630:com.cloudbees.workflow.rest.endpoints.FlowNodeAPI@40b1f630;harness-attribute-extra-pip: io.jenkins.plugins.opentelemetry.MigrateHarnessUrlChildAction@522ad6de:io.jenkins.plugins.opentelemetry.MigrateHarnessUrlChildAction@522ad6de;harness-attribute-extra-pip: org.jenkinsci.plugins.workflow.actions.TimingAction@2d47e9d9:org.jenkinsci.plugins.workflow.actions.TimingAction@2d47e9d9;harness-others:;jenkins.pipeline.step.id:20;jenkins.pipeline.step.name:Publish HTML reports;jenkins.pipeline.step.plugin.name:htmlpublisher;jenkins.pipeline.step.plugin.version:1.36;jenkins.pipeline.step.type:publishHTML;)",
+                              "name": "op-jacoco #1",
+                              "attributesMap": {
+                                "harness-others": "",
+                                "jenkins.pipeline.step.name": "Publish HTML reports",
+                                "ci.pipeline.run.user": "SYSTEM",
+                                "harness-attribute-extra-pip: io.jenkins.plugins.opentelemetry.MigrateHarnessUrlChildAction@522ad6de": "io.jenkins.plugins.opentelemetry.MigrateHarnessUrlChildAction@522ad6de",
+                                "jenkins.pipeline.step.id": "20",
+                                "jenkins.pipeline.step.type": "publishHTML",
+                                "harness-attribute-extra-pip: org.jenkinsci.plugins.workflow.actions.TimingAction@2d47e9d9": "org.jenkinsci.plugins.workflow.actions.TimingAction@2d47e9d9",
+                                "harness-attribute": "{\n  \"target\" : {\n    \"reportName\" : \"JaCoCo Coverage Report\",\n    \"reportDir\" : \"target/site/jacoco\",\n    \"reportFiles\" : \"index.html\",\n    \"keepAll\" : true,\n    \"alwaysLinkToLastBuild\" : true,\n    \"allowMissing\" : true\n  }\n}",
+                                "jenkins.pipeline.step.plugin.name": "htmlpublisher",
+                                "jenkins.pipeline.step.plugin.version": "1.36",
+                                "harness-attribute-extra-pip: com.cloudbees.workflow.rest.endpoints.FlowNodeAPI@40b1f630": "com.cloudbees.workflow.rest.endpoints.FlowNodeAPI@40b1f630"
+                              },
+                              "type": "Run Phase Span",
+                              "parentSpanId": "daf9f665d6ae81f7",
+                              "parameterMap": {"target": {
+                                "reportName": "JaCoCo Coverage Report",
+                                "allowMissing": true,
+                                "reportDir": "target/site/jacoco",
+                                "reportFiles": "index.html",
+                                "keepAll": true,
+                                "alwaysLinkToLastBuild": true
+                              }},
+                              "spanName": "publishHTML"
+                            }
+                          ],
+                          "name": "op-jacoco #1",
+                          "attributesMap": {
+                            "harness-attribute-extra-pip: org.jenkinsci.plugins.workflow.actions.BodyInvocationAction@385f6b9a": "org.jenkinsci.plugins.workflow.actions.BodyInvocationAction@385f6b9a",
+                            "harness-attribute-extra-pip: org.jenkinsci.plugins.workflow.actions.TimingAction@600bc878": "org.jenkinsci.plugins.workflow.actions.TimingAction@600bc878",
+                            "harness-others": "-name-field org.jenkinsci.plugins.workflow.support.steps.StageStep name-org.jenkinsci.plugins.workflow.support.steps.StageStep.name-class java.lang.String-concurrency-field org.jenkinsci.plugins.workflow.support.steps.StageStep concurrency-org.jenkinsci.plugins.workflow.support.steps.StageStep.concurrency-class java.lang.Integer",
+                            "jenkins.pipeline.step.name": "Declarative: Post Actions",
+                            "harness-attribute-extra-pip: com.cloudbees.workflow.rest.endpoints.FlowNodeAPI@4961b363": "com.cloudbees.workflow.rest.endpoints.FlowNodeAPI@4961b363",
+                            "jenkins.pipeline.step.id": "18",
+                            "jenkins.pipeline.step.type": "stage",
+                            "jenkins.pipeline.step.plugin.name": "pipeline-stage-step",
+                            "harness-attribute-extra-pip: io.jenkins.plugins.opentelemetry.MigrateHarnessUrlChildAction@28bf6ca8": "io.jenkins.plugins.opentelemetry.MigrateHarnessUrlChildAction@28bf6ca8",
+                            "jenkins.pipeline.step.plugin.version": "312.v8cd10304c27a_",
+                            "harness-attribute-extra-pip: org.jenkinsci.plugins.workflow.actions.LabelAction@7df3899e": "org.jenkinsci.plugins.workflow.actions.LabelAction@7df3899e"
+                          },
+                          "type": "Run Phase Span",
+                          "parentSpanId": "37c82fa97666fdab",
+                          "spanName": "Stage: Declarative: Post Actions"
+                        },
+                        {
+                          "spanId": "c92aabc148408b94",
+                          "traceId": "12b7b0c051b529b5aeffaa0b2c269b8a",
+                          "parent": "op-jacoco",
+                          "all-info": "span(name: Stage: null, spanId: c92aabc148408b94, parentSpanId: 37c82fa97666fdab, traceId: 12b7b0c051b529b5aeffaa0b2c269b8a, attr: harness-attribute-extra-pip: com.cloudbees.workflow.rest.endpoints.FlowNodeAPI@75392bae:com.cloudbees.workflow.rest.endpoints.FlowNodeAPI@75392bae;harness-attribute-extra-pip: io.jenkins.plugins.opentelemetry.MigrateHarnessUrlChildAction@19a6bcf:io.jenkins.plugins.opentelemetry.MigrateHarnessUrlChildAction@19a6bcf;harness-attribute-extra-pip: org.jenkinsci.plugins.workflow.actions.TimingAction@7fc176bd:org.jenkinsci.plugins.workflow.actions.TimingAction@7fc176bd;harness-others:-name-field org.jenkinsci.plugins.workflow.support.steps.StageStep name-org.jenkinsci.plugins.workflow.support.steps.StageStep.name-class java.lang.String-concurrency-field org.jenkinsci.plugins.workflow.support.steps.StageStep concurrency-org.jenkinsci.plugins.workflow.support.steps.StageStep.concurrency-class java.lang.Integer;jenkins.pipeline.step.type:stage;)",
+                          "name": "op-jacoco #1",
+                          "attributesMap": {
+                            "harness-others": "-name-field org.jenkinsci.plugins.workflow.support.steps.StageStep name-org.jenkinsci.plugins.workflow.support.steps.StageStep.name-class java.lang.String-concurrency-field org.jenkinsci.plugins.workflow.support.steps.StageStep concurrency-org.jenkinsci.plugins.workflow.support.steps.StageStep.concurrency-class java.lang.Integer",
+                            "harness-attribute-extra-pip: org.jenkinsci.plugins.workflow.actions.TimingAction@7fc176bd": "org.jenkinsci.plugins.workflow.actions.TimingAction@7fc176bd",
+                            "harness-attribute-extra-pip: com.cloudbees.workflow.rest.endpoints.FlowNodeAPI@75392bae": "com.cloudbees.workflow.rest.endpoints.FlowNodeAPI@75392bae",
+                            "jenkins.pipeline.step.type": "stage",
+                            "harness-attribute-extra-pip: io.jenkins.plugins.opentelemetry.MigrateHarnessUrlChildAction@19a6bcf": "io.jenkins.plugins.opentelemetry.MigrateHarnessUrlChildAction@19a6bcf"
+                          },
+                          "type": "Run Phase Span",
+                          "parentSpanId": "37c82fa97666fdab",
+                          "spanName": "Stage: null"
+                        }
+                      ],
+                      "name": "op-jacoco #1",
+                      "attributesMap": {
+                        "harness-attribute-extra-pip: com.cloudbees.workflow.rest.endpoints.FlowNodeAPI@275fe098": "com.cloudbees.workflow.rest.endpoints.FlowNodeAPI@275fe098",
+                        "harness-attribute-extra-pip: org.jenkinsci.plugins.workflow.actions.TimingAction@62d7a71f": "org.jenkinsci.plugins.workflow.actions.TimingAction@62d7a71f",
+                        "harness-attribute-extra-pip: org.jenkinsci.plugins.workflow.support.actions.LogStorageAction@24e2215": "org.jenkinsci.plugins.workflow.support.actions.LogStorageAction@24e2215",
+                        "harness-others": "-name-field org.jenkinsci.plugins.workflow.support.steps.StageStep name-org.jenkinsci.plugins.workflow.support.steps.StageStep.name-class java.lang.String-concurrency-field org.jenkinsci.plugins.workflow.support.steps.StageStep concurrency-org.jenkinsci.plugins.workflow.support.steps.StageStep.concurrency-class java.lang.Integer",
+                        "jenkins.pipeline.step.type": "stage",
+                        "harness-attribute": "{\n  \"name\" : \"Declarative: Post Actions\"\n}",
+                        "harness-attribute-extra-pip: io.jenkins.plugins.opentelemetry.MigrateHarnessUrlChildAction@1805d951": "io.jenkins.plugins.opentelemetry.MigrateHarnessUrlChildAction@1805d951"
+                      },
+                      "type": "Run Phase Span",
+                      "parentSpanId": "00082bbf16831792",
+                      "parameterMap": {"name": "Declarative: Post Actions"},
+                      "spanName": "Stage: null"
+                    }
+                  ],
+                  "name": "op-jacoco #1",
+                  "attributesMap": {
+                    "harness-attribute-extra-pip: io.jenkins.plugins.opentelemetry.MigrateHarnessUrlChildAction@3955d601": "io.jenkins.plugins.opentelemetry.MigrateHarnessUrlChildAction@3955d601",
+                    "harness-attribute-extra-pip: com.cloudbees.workflow.rest.endpoints.FlowNodeAPI@24cff0d4": "com.cloudbees.workflow.rest.endpoints.FlowNodeAPI@24cff0d4",
+                    "harness-others": "",
+                    "harness-attribute-extra-pip: org.jenkinsci.plugins.workflow.actions.TimingAction@72ca395b": "org.jenkinsci.plugins.workflow.actions.TimingAction@72ca395b",
+                    "harness-attribute-extra-pip: org.jenkinsci.plugins.workflow.actions.BodyInvocationAction@19299476": "org.jenkinsci.plugins.workflow.actions.BodyInvocationAction@19299476",
+                    "jenkins.pipeline.step.type": "withEnv"
+                  },
+                  "type": "Run Phase Span",
+                  "parentSpanId": "3b3910471a63b426",
+                  "spanName": "Stage: null"
+                },
+                {
+                  "spanId": "c56f3b9d6bea0f30",
+                  "traceId": "12b7b0c051b529b5aeffaa0b2c269b8a",
+                  "parent": "op-jacoco",
+                  "all-info": "span(name: Stage: null, spanId: c56f3b9d6bea0f30, parentSpanId: 3b3910471a63b426, traceId: 12b7b0c051b529b5aeffaa0b2c269b8a, attr: harness-attribute-extra-pip: com.cloudbees.workflow.rest.endpoints.FlowNodeAPI@2709a8a5:com.cloudbees.workflow.rest.endpoints.FlowNodeAPI@2709a8a5;harness-attribute-extra-pip: io.jenkins.plugins.opentelemetry.MigrateHarnessUrlChildAction@3df9444c:io.jenkins.plugins.opentelemetry.MigrateHarnessUrlChildAction@3df9444c;harness-attribute-extra-pip: org.jenkinsci.plugins.workflow.actions.TimingAction@544fd948:org.jenkinsci.plugins.workflow.actions.TimingAction@544fd948;harness-others:;jenkins.pipeline.step.type:withEnv;)",
+                  "name": "op-jacoco #1",
+                  "attributesMap": {
+                    "harness-attribute-extra-pip: io.jenkins.plugins.opentelemetry.MigrateHarnessUrlChildAction@3df9444c": "io.jenkins.plugins.opentelemetry.MigrateHarnessUrlChildAction@3df9444c",
+                    "harness-others": "",
+                    "harness-attribute-extra-pip: com.cloudbees.workflow.rest.endpoints.FlowNodeAPI@2709a8a5": "com.cloudbees.workflow.rest.endpoints.FlowNodeAPI@2709a8a5",
+                    "harness-attribute-extra-pip: org.jenkinsci.plugins.workflow.actions.TimingAction@544fd948": "org.jenkinsci.plugins.workflow.actions.TimingAction@544fd948",
+                    "jenkins.pipeline.step.type": "withEnv"
+                  },
+                  "type": "Run Phase Span",
+                  "parentSpanId": "3b3910471a63b426",
+                  "spanName": "Stage: null"
+                }
+              ],
+              "name": "op-jacoco #1",
+              "attributesMap": {
+                "harness-attribute-extra-pip: com.cloudbees.workflow.rest.endpoints.FlowNodeAPI@2bcdf4bd": "com.cloudbees.workflow.rest.endpoints.FlowNodeAPI@2bcdf4bd",
+                "harness-others": "",
+                "harness-attribute-extra-pip: org.jenkinsci.plugins.workflow.actions.TimingAction@6163f064": "org.jenkinsci.plugins.workflow.actions.TimingAction@6163f064",
+                "jenkins.pipeline.step.type": "withEnv",
+                "harness-attribute": "{\n  \"overrides\" : [ \"BRANCH=master\", \"GITHUB_REPO=https://github.com/syamv/gameoflife.git\" ]\n}",
+                "harness-attribute-extra-pip: org.jenkinsci.plugins.workflow.support.actions.LogStorageAction@926406": "org.jenkinsci.plugins.workflow.support.actions.LogStorageAction@926406",
+                "harness-attribute-extra-pip: io.jenkins.plugins.opentelemetry.MigrateHarnessUrlChildAction@6e2571c0": "io.jenkins.plugins.opentelemetry.MigrateHarnessUrlChildAction@6e2571c0"
+              },
+              "type": "Run Phase Span",
+              "parentSpanId": "72e066255368f652",
+              "parameterMap": {"overrides": [
+                "BRANCH=master",
+                "GITHUB_REPO=https://github.com/syamv/gameoflife.git"
+              ]},
+              "spanName": "Stage: null"
+            },
+            {
+              "spanId": "a404e5c4e5a27a84",
+              "traceId": "12b7b0c051b529b5aeffaa0b2c269b8a",
+              "parent": "op-jacoco",
+              "all-info": "span(name: Stage: null, spanId: a404e5c4e5a27a84, parentSpanId: 72e066255368f652, traceId: 12b7b0c051b529b5aeffaa0b2c269b8a, attr: harness-attribute-extra-pip: com.cloudbees.workflow.rest.endpoints.FlowNodeAPI@29e4286f:com.cloudbees.workflow.rest.endpoints.FlowNodeAPI@29e4286f;harness-attribute-extra-pip: io.jenkins.plugins.opentelemetry.MigrateHarnessUrlChildAction@667d9d31:io.jenkins.plugins.opentelemetry.MigrateHarnessUrlChildAction@667d9d31;harness-attribute-extra-pip: org.jenkinsci.plugins.workflow.actions.TimingAction@6bd04580:org.jenkinsci.plugins.workflow.actions.TimingAction@6bd04580;harness-others:;jenkins.pipeline.step.type:node;)",
+              "name": "op-jacoco #1",
+              "attributesMap": {
+                "harness-attribute-extra-pip: io.jenkins.plugins.opentelemetry.MigrateHarnessUrlChildAction@667d9d31": "io.jenkins.plugins.opentelemetry.MigrateHarnessUrlChildAction@667d9d31",
+                "harness-attribute-extra-pip: com.cloudbees.workflow.rest.endpoints.FlowNodeAPI@29e4286f": "com.cloudbees.workflow.rest.endpoints.FlowNodeAPI@29e4286f",
+                "harness-others": "",
+                "harness-attribute-extra-pip: org.jenkinsci.plugins.workflow.actions.TimingAction@6bd04580": "org.jenkinsci.plugins.workflow.actions.TimingAction@6bd04580",
+                "jenkins.pipeline.step.type": "node"
+              },
+              "type": "Run Phase Span",
+              "parentSpanId": "72e066255368f652",
+              "spanName": "Stage: null"
+            }
+          ],
+          "name": "op-jacoco #1",
+          "attributesMap": {
+            "harness-others": "",
+            "jenkins.pipeline.step.name": "agent",
+            "harness-attribute-extra-pip: io.jenkins.plugins.opentelemetry.MigrateHarnessUrlChildAction@224cb5d2": "io.jenkins.plugins.opentelemetry.MigrateHarnessUrlChildAction@224cb5d2",
+            "jenkins.pipeline.step.id": "3",
+            "jenkins.pipeline.step.type": "node",
+            "harness-attribute-extra-pip: org.jenkinsci.plugins.workflow.actions.TimingAction@5366eb2e": "org.jenkinsci.plugins.workflow.actions.TimingAction@5366eb2e",
+            "jenkins.credentials.id": "[org.jenkinsci.plugins.workflow.support.actions.LogStorageAction@4ee6cdd0, org.jenkinsci.plugins.workflow.actions.TimingAction@5366eb2e, com.cloudbees.workflow.rest.endpoints.FlowNodeAPI@91bbe1b, io.jenkins.plugins.opentelemetry.MigrateHarnessUrlChildAction@1331433b]",
+            "jenkins.pipeline.step.plugin.name": "workflow-durable-task-step",
+            "harness-attribute-extra-pip: com.cloudbees.workflow.rest.endpoints.FlowNodeAPI@4fd9e318": "com.cloudbees.workflow.rest.endpoints.FlowNodeAPI@4fd9e318",
+            "jenkins.pipeline.step.plugin.version": "1353.v1891a_b_01da_18",
+            "harness-attribute-extra-pip: org.jenkinsci.plugins.workflow.support.actions.LogStorageAction@4ee6cdd0": "org.jenkinsci.plugins.workflow.support.actions.LogStorageAction@4ee6cdd0"
+          },
+          "type": "Run Phase Span",
+          "parentSpanId": "6ed7401d8a5e01ea",
+          "spanName": "Agent"
+        }
+      ],
+      "name": "op-jacoco #1",
+      "attributesMap": {},
+      "type": "Run Phase Span",
+      "parentSpanId": "69af8475af40c75e",
+      "spanName": "Phase: Run"
+    },
+    {
+      "spanId": "f4fa4f0bcf206a85",
+      "traceId": "12b7b0c051b529b5aeffaa0b2c269b8a",
+      "parent": "op-jacoco",
+      "all-info": "span(name: Phase: Start, spanId: f4fa4f0bcf206a85, parentSpanId: 69af8475af40c75e, traceId: 12b7b0c051b529b5aeffaa0b2c269b8a, attr: )",
+      "name": "op-jacoco #1",
+      "attributesMap": {},
+      "type": "Run Phase Span",
+      "parentSpanId": "69af8475af40c75e",
+      "spanName": "Phase: Start"
+    },
+    {
+      "spanId": "7e0b86f4c526551e",
+      "traceId": "12b7b0c051b529b5aeffaa0b2c269b8a",
+      "parent": "op-jacoco",
+      "all-info": "span(name: Phase: Finalise, spanId: 7e0b86f4c526551e, parentSpanId: 69af8475af40c75e, traceId: 12b7b0c051b529b5aeffaa0b2c269b8a, attr: )",
+      "name": "op-jacoco #1",
+      "attributesMap": {},
+      "type": "Run Phase Span",
+      "parentSpanId": "69af8475af40c75e",
+      "spanName": "Phase: Finalise"
+    }
+  ],
+  "name": "op-jacoco #1",
+  "parentSpanId": "0000000000000000",
+  "spanName": "op-jacoco #1"
+}

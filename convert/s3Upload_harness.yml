@@ -1,0 +1,44 @@
+pipeline:
+  identifier: default
+  name: default
+  orgIdentifier: default
+  projectIdentifier: default
+  properties:
+    ci:
+      codebase:
+        build: <+input>
+  stages:
+  - stage:
+      identifier: build
+      name: build
+      spec:
+        cloneCodebase: true
+        execution:
+          steps:
+          - stepGroup:
+              identifier: Stage__null3aeb80
+              name: Publish
+              steps:
+              - step:
+                  identifier: s3uploads3uplo0
+                  name: s3Uploads3Uplo_0
+                  spec:
+                    image: plugins/s3
+                    settings:
+                      access_key: <+input>
+                      bucket: bucket-1
+                      exclude: 2.txxt
+                      region: us-west-1
+                      secret_key: <+input>
+                      source: '*.txt'
+                      target: <+input>
+                  timeout: ""
+                  type: Plugin
+              timeout: ""
+        platform:
+          arch: Amd64
+          os: Linux
+        runtime:
+          spec: {}
+          type: Cloud
+      type: CI

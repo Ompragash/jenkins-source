@@ -1,0 +1,87 @@
+pipeline:
+  identifier: default
+  name: default
+  orgIdentifier: default
+  projectIdentifier: default
+  properties:
+    ci:
+      codebase:
+        build: <+input>
+  stages:
+  - stage:
+      identifier: build
+      name: build
+      spec:
+        cloneCodebase: true
+        execution:
+          steps:
+          - stepGroup:
+              identifier: Stage__nullceb12e
+              name: Checkout Code
+              timeout: ""
+          - stepGroup:
+              identifier: Stage__null1d6bb2
+              name: Publish JaCoCo Coverage Report
+              steps:
+              - step:
+                  identifier: jacoco463391
+                  name: jacoco
+                  spec:
+                    image: plugins/coverage-report
+                    settings:
+                      class_directories: '**/target/classes'
+                      class_exclusion_pattern: '**/test/**'
+                      fail_on_threshold: "true"
+                      reports_path_pattern: target/*.exec
+                      source_directories: '**/src/main/java'
+                      tool: jacoco
+                  timeout: ""
+                  type: Plugin
+              timeout: ""
+          - stepGroup:
+              identifier: Stage__null37c82f
+              name: Declarative Post Actions
+              steps:
+              - step:
+                  identifier: archiveartifacts9b7661
+                  name: archiveArtifacts
+                  spec:
+                    envVariables:
+                      EXCLUDE: ""
+                    image: plugins/s3
+                    settings:
+                      access_key: access-key
+                      bucket: bucket-name
+                      secret_key: secret-key
+                      source: '**/target/site/jacoco/*'
+                  timeout: ""
+                  type: Plugin
+              - step:
+                  identifier: publishhtml5c66af
+                  name: publishHTML
+                  spec:
+                    command: |-
+                      echo "This is a place holder for: publishHTML"
+
+                      # Here is the parameterMap for this function:
+                      # {
+                      #   "target": {
+                      #     "allowMissing": true,
+                      #     "alwaysLinkToLastBuild": true,
+                      #     "keepAll": true,
+                      #     "reportDir": "target/site/jacoco",
+                      #     "reportFiles": "index.html",
+                      #     "reportName": "JaCoCo Coverage Report"
+                      #   }
+                      # }
+                    shell: Sh
+                  timeout: ""
+                  type: Run
+              timeout: ""
+        platform:
+          arch: Amd64
+          os: Linux
+        runtime:
+          spec: {}
+          type: Cloud
+      type: CI

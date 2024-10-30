@@ -1,0 +1,193 @@
+pipeline:
+  identifier: default
+  name: default
+  orgIdentifier: default
+  projectIdentifier: default
+  properties:
+    ci:
+      codebase:
+        build: <+input>
+  stages:
+  - stage:
+      identifier: build
+      name: build
+      spec:
+        cloneCodebase: true
+        execution:
+          steps:
+          - stepGroup:
+              identifier: Stage__null833e5f
+              name: Make HTTP Request and Read Response
+              steps:
+              - step:
+                  identifier: httprequesta9349f
+                  name: httpRequest
+                  spec:
+                    image: plugins/httpRequest
+                    settings:
+                      accept_type: APPLICATION_JSON
+                      auth_basic: httprequest
+                      content_type: APPLICATION_JSON
+                      headers: Authorization:Bearer <token>,X-Custom-Header:example-header
+                      http_method: POST
+                      ignore_ssl: "true"
+                      log_response: "true"
+                      output_file: response.json
+                      quiet: "false"
+                      request_body: '{"title": "foo", "body": "bar", "userId": 1}'
+                      timeout: "60"
+                      url: https://jsonplaceholder.typicode.com/posts
+                      valid_response_body: '"id":'
+                      valid_response_codes: 200:299
+                      wrap_as_multipart: "false"
+                  timeout: ""
+                  type: Plugin
+              - step:
+                  identifier: readfile921c17
+                  name: readFile
+                  spec:
+                    command: cat response.json
+                    shell: Sh
+                  timeout: ""
+                  type: Run
+              timeout: ""
+          - stepGroup:
+              identifier: Stage__nulld27afd
+              name: Build
+              steps:
+              - step:
+                  identifier: jirasendbuildinfo340a72
+                  name: jiraSendBuildInfo
+                  spec:
+                    image: plugins/jira
+                    settings:
+                      connect_key: <+secrets.getValue("JIRA_CONNECT_KEY")>
+                      instance: example.atlassian.net
+                      project: $JIRA_PROJECT
+                  timeout: ""
+                  type: Plugin
+              timeout: ""
+          - stepGroup:
+              identifier: Stage__null432b00
+              name: Send Deployment Info to Jira
+              steps:
+              - step:
+                  identifier: jirasenddeploymentinfo8d2c5c
+                  name: jiraSendDeploymentInfo
+                  spec:
+                    image: plugins/jira
+                    settings:
+                      connect_key: <+secrets.getValue("JIRA_CONNECT_KEY")>
+                      environment_id: us-prod-1
+                      environment_name: us-prod-1
+                      environment_type: production
+                      instance: $JIRA_SITE_ID
+                      project: $JIRA_PROJECT
+                  timeout: ""
+                  type: Plugin
+              timeout: ""
+          - stepGroup:
+              identifier: Stage__null36c0db
+              name: Create File
+              steps:
+              - step:
+                  identifier: fileoperations7953c2
+                  name: fileCreateOperation
+                  spec:
+                    command: echo 'Hello, World!' > newfile.txt
+                    image: alpine
+                  timeout: ""
+                  type: Run
+              timeout: ""
+          - stepGroup:
+              identifier: Stage__nulle33b6c
+              name: Prepare Directory and Download File
+              steps:
+              - step:
+                  identifier: sh17a55d
+                  name: sh
+                  spec:
+                    command: mkdir -p downloads
+                    image: alpine
+                    shell: Sh
+                  timeout: ""
+                  type: Run
+              - step:
+                  identifier: fileoperationsb2e547
+                  name: fileDownloadOperation
+                  spec:
+                    command: wget -P downloads/ https://github.com/git/git/archive/refs/heads/master.zip
+                    image: alpine/curl
+                  timeout: ""
+                  type: Run
+              timeout: ""
+          - stepGroup:
+              identifier: Stage__nullccb1b0
+              name: Create TAR File
+              steps:
+              - step:
+                  identifier: sha62944
+                  name: sh
+                  spec:
+                    command: "\n                    mkdir -p src\n                    echo
+                      \"Sample content\" > src/file1.txt\n                    echo
+                      \"Another sample content\" > src/file2.txt\n                    tar
+                      -czf src.tar.gz src\n                    "
+                    image: alpine
+                    shell: Sh
+                  timeout: ""
+                  type: Run
+              timeout: ""
+          - stepGroup:
+              identifier: Stage__null702b58
+              name: UnTar File
+              steps:
+              - step:
+                  identifier: fileoperations390c2c
+                  name: fileUnTarOperation
+                  spec:
+                    image: plugins/archive:latest
+                    settings:
+                      action: extract
+                      format: gzip
+                      source: src.tar.gz
+                      target: dest/
+                  timeout: ""
+                  type: Plugin
+              timeout: ""
+          - stepGroup:
+              identifier: Stage__null345fd5
+              name: Create Source Folder and Zip
+              steps:
+              - step:
+                  identifier: she44fbf
+                  name: sh
+                  spec:
+                    command: "\n                    mkdir -p src\n                    echo
+                      \"Sample content\" > src/file1.txt\n                    echo
+                      \"Another sample content\" > src/file2.txt\n                    "
+                    image: alpine
+                    shell: Sh
+                  timeout: ""
+                  type: Run
+              - step:
+                  identifier: fileoperations7e3392
+                  name: fileZipOperation
+                  spec:
+                    image: plugins/archive:latest
+                    settings:
+                      action: archive
+                      format: zip
+                      overwrite: "true"
+                      source: src/
+                      target: dest/
+                  timeout: ""
+                  type: Plugin
+              timeout: ""
+        platform:
+          arch: Amd64
+          os: Linux
+        runtime:
+          spec: {}
+          type: Cloud
+      type: CI
